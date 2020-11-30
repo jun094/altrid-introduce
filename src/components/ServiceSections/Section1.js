@@ -2,6 +2,8 @@ import React from 'react';
 import '../../styles/service_section_1.scss';
 import { Fade } from 'react-reveal';
 import { withRouter } from 'react-router-dom';
+import Service1_0 from '../../images/service_sections/service_1-0.png';
+
 /**
  * h1: 36px / 44px
  * h2: 32px / 42px
@@ -21,8 +23,9 @@ function Section1({ history }) {
                     </Fade>
                     <Fade bottom distance={'3rem'} delay={666} duration={666}>
                         <h4>
-                            알트리드만의 시선흐름 AI 알고리즘을 통해
-                            <br /> 영어의 장벽을 극복해보세요 !
+                            알트리드만의 기술로 스마트하게 과제를 생성하고
+                            <br />
+                            교육의 시간을 줄여보세요.
                         </h4>
                     </Fade>
 
@@ -43,7 +46,7 @@ function Section1({ history }) {
             </div>
             <div className="right-and-bottom">
                 <Fade right distance={'4rem'} duration={666}>
-                    <img src="/service_sections/service_1-0.png" alt="service in devices..." />
+                    <img src={Service1_0} alt="service in devices..." />
                 </Fade>
             </div>
         </>

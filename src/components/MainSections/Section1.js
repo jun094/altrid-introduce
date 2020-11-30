@@ -21,7 +21,7 @@ function Section1({ history }) {
                         </h1>
                     </Fade>
                     <Fade bottom distance={'3rem'} delay={666} duration={666}>
-                        <h4>알트리드만의 차별화 된 영어학습</h4>
+                        <h4>알트리드만의 차별화 된 영어학습관리 시스템</h4>
                     </Fade>
                     <Fade delay={1330} duration={1000}>
                         <div>
