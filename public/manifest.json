@@ -1,0 +1,9 @@
+{
+    "short_name": "Eduity Introduce",
+    "name": "Introduce our service",
+    "icons": [],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#00e099",
+    "background_color": "#ffffff"
+}

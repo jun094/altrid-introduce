@@ -1,0 +1,201 @@
+$menuPrimary: #000000;
+$menuHighlighted: #000000;
+
+a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+.nav-root {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1000;
+
+    &.scrolled {
+        box-shadow: 0 0.2rem 0.25rem rgba(0, 0, 0, 0.15);
+        // & .item:hover {
+        //     color: $menuHighlighted;
+        //     text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+        // }
+    }
+
+    & .nav-wrapper {
+        display: inherit;
+        justify-content: space-between;
+        align-items: center;
+        color: $menuPrimary;
+        font-weight: 600;
+        width: 100%;
+        max-width: 1080px;
+        // transition: background-color 0.2s, height 0.3s, box-shadow 0.3s;
+        user-select: none;
+
+        & .nav-logo {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            min-width: 148px;
+            padding-left: 32px;
+            transition: padding 0.3s;
+
+            & img {
+                height: 40px;
+                position: fixed;
+                // filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.4));
+                transition: opacity 0.3s, filter 0.3s;
+
+                &.white {
+                    opacity: 1;
+                    &.scrolled {
+                        opacity: 0;
+                    }
+                }
+
+                &.color {
+                    opacity: 1;
+                    // &.scrolled {
+                    //     opacity: 1;
+                    //     filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0));
+                    // }
+                }
+            }
+        }
+
+        & .nav-menus {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // margin-left: 72px;
+            margin-left: auto;
+            margin-right: 48px;
+
+            height: 100%;
+
+            & a {
+                & .item {
+                    display: flex;
+                    align-items: center;
+                    // height: 95%;
+
+                    cursor: pointer;
+                    // transition: all 0.3s;
+                }
+
+                & + a {
+                    margin-left: 48px;
+                }
+            }
+        }
+
+        & .nav-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 32px;
+            transition: padding 0.3s;
+
+            & .item {
+                cursor: pointer;
+                // transition: all 0.3s;
+
+                &.select-lang {
+                    color: white;
+                    &.scrolled {
+                        color: $menuPrimary;
+                        &:hover {
+                            color: $menuHighlighted;
+                        }
+                    }
+                }
+
+                & + .item {
+                    margin-left: 48px;
+                }
+            }
+        }
+        & .nav-hambuger {
+            display: none;
+        }
+
+        @media (max-width: 960px) {
+            & .nav-menus {
+                // margin-left: 42px;
+                margin-left: auto;
+                margin-right: 48px;
+            }
+
+            & .nav-logo {
+                padding-left: 42px;
+            }
+
+            & .nav-right {
+                padding-right: 42px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            & .nav-logo {
+                padding-left: 36px;
+            }
+
+            & .nav-menus {
+                display: none;
+            }
+
+            & .nav-right {
+                padding-right: 36px;
+
+                & .login {
+                    display: none;
+                }
+            }
+
+            & .nav-hambuger {
+                cursor: pointer;
+                display: inline;
+                padding-left: 28px;
+                display: flex;
+            }
+
+            & .nav-hambuger {
+                cursor: pointer;
+                display: inline;
+                padding-left: 28px;
+                display: flex;
+            }
+        }
+        @media (max-width: 600px) {
+            & .nav-logo {
+                padding-left: 32px;
+            }
+
+            & .nav-menus {
+                display: none;
+            }
+
+            & .nav-right {
+                padding-right: 32px;
+
+                & .login {
+                    display: none;
+                }
+            }
+            & .nav-hambuger {
+                cursor: pointer;
+                display: inline;
+                padding-left: 15px;
+                display: flex;
+            }
+            & .nav-hambuger {
+                cursor: pointer;
+                display: inline;
+                padding-left: 15px;
+                display: flex;
+            }
+        }
+    }
+}

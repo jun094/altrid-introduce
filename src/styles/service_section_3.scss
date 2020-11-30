@@ -1,0 +1,10 @@
+#service_section_3 {
+    background-color: #f7f9fc;
+    padding-top: 9vh;
+    padding-bottom: 9vh;
+
+    @media all and (max-width: 768px) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
