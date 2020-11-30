@@ -69,10 +69,10 @@ function CustomerServices({ history }) {
             <div className="customer-service-root">
                 <div className="customer-container">
                     <div className="customer-header">
-                        안녕하세요. <br /> 에듀이티 고객지원입니다. 무엇을 도와드릴까요?
+                        안녕하세요. <br /> 알트리드 고객지원입니다. 무엇을 도와드릴까요?
                     </div>
                     <div className="customer-header-mobile">
-                        안녕하세요. <br /> 에듀이티 고객지원입니다. <br />
+                        안녕하세요. <br /> 알트리드 고객지원입니다. <br />
                         무엇을 도와드릴까요?
                     </div>
 

@@ -21,7 +21,7 @@ function Section1({ history }) {
                     </Fade>
                     <Fade bottom distance={'3rem'} delay={666} duration={666}>
                         <h4>
-                            에듀이티만의 시선흐름 AI 알고리즘을 통해
+                            알트리드만의 시선흐름 AI 알고리즘을 통해
                             <br /> 영어의 장벽을 극복해보세요 !
                         </h4>
                     </Fade>

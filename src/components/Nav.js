@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/nav.scss';
-//import ColorLogo from '../images/nav_logo_color.svg';
-import ColorLogo from '../images/nav_logo_color.svg';
+import AltridLogoHorizon from '../images/altrid_logo_color_horizon.png';
 
 // import { Select, MenuItem, InputBase } from '@material-ui/core';
 // import { withStyles } from '@material-ui/core/styles';
@@ -106,7 +105,7 @@ function Nav({ optStatic, history }) {
                         }}
                     >
                         <div className="nav-logo">
-                            <img className="color" src={ColorLogo} alt="Go to home..." />
+                            <img className="color" src={AltridLogoHorizon} alt="Go to home..." />
                         </div>
                     </Link>
                     <AnimScrollTo

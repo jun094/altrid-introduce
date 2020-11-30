@@ -90,7 +90,7 @@ export default function CustomizedAccordions() {
                     </AccordionSummary>
                     <AccordionDetails>
                         <span>
-                            테스트는 TOFEL 문제와 에듀이티 자체 제작 문제로 선택이 가능합니다. TOFEL 문제는 난이도 중이며, 자체 제작 문제는
+                            테스트는 TOFEL 문제와 알트리드 자체 제작 문제로 선택이 가능합니다. TOFEL 문제는 난이도 중이며, 자체 제작 문제는
                             난이도 하입니다.
                         </span>
                     </AccordionDetails>

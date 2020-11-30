@@ -35,7 +35,7 @@ function Section4() {
         <>
             <SectionTitle
                 tag="Why"
-                title="에듀이티는 영어교육의 2가지 문제점을 해결하고자 합니다."
+                title="알트리드는 영어교육의 2가지 문제점을 해결하고자 합니다."
                 subText="현 영어교육은 학습 진단 과정과 교육 방식에 문제가 있습니다."
             />
             <div className="subs-root">

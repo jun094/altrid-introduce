@@ -31,7 +31,7 @@ function Section6() {
         <>
             <SectionTitle
                 tag="What"
-                title="에듀이티는 3가지 솔루션을 제안합니다."
+                title="알트리드는 3가지 솔루션을 제안합니다."
                 subText="맞춤형 솔루션을 통해 진단부터 교육 그리고 큐레이팅 서비스를 제공합니다."
             />
             <div className="subs-root">

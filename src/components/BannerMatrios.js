@@ -15,7 +15,7 @@ function BannerMatrios() {
                     </Fade>
                     <div className="company-promo-container">
                         <Fade left distance={'16rem'} duration={666} delay={400} fraction={0.9}>
-                            <h2 className="title">에듀이티는 시선 추적 기술 스타트업 매트리오즈와 함께합니다.</h2>
+                            <h2 className="title">알트리드는 시선 추적 기술 스타트업 매트리오즈와 함께합니다.</h2>
                         </Fade>
                         <Fade right distance={'16rem'} duration={666} delay={700} fraction={0.9}>
                             <p className="text">
