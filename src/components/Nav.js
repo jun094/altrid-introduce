@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/nav.scss';
+//import ColorLogo from '../images/nav_logo_color.svg';
 import ColorLogo from '../images/nav_logo_color.svg';
+
 // import { Select, MenuItem, InputBase } from '@material-ui/core';
 // import { withStyles } from '@material-ui/core/styles';
 import { Link, NavLink, withRouter } from 'react-router-dom';
