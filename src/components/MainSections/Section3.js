@@ -142,7 +142,7 @@ function Section3() {
                 ></Fade>
                 <div className="banner-root">
                     <div className="left-top">
-                        <h2>올바른 시선 유도</h2>
+                        <h2>객관적인 시선 지표</h2>
                     </div>
                     <div className="right-bottom">
                         <p>
@@ -150,7 +150,7 @@ function Section3() {
                             잘하는 학생들은 안구 운동을 최소화하여 움직입니다.
                         </p>
                         <p>
-                            <span>알트리드는 이러한 안구 운동에 대한 객관적인 지표를 제시하며, 올바른 시선으로 유도합니다.</span>
+                            <span>알트리드는 이러한 안구 운동에 대한 객관적인 지표를 제시하며, 교육에 활용합니다.</span>
                         </p>
                     </div>
                 </div>
