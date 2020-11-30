@@ -78,10 +78,10 @@ function CustomerServices({ history }) {
 
                     <div className="customer-header-email">
                         <div>
-                            서비스 관련 <FiMail style={{ marginRight: '0.6em', fontSize: '0.9em' }} /> khjeon1994@gmail.com
+                            서비스 관련 <FiMail style={{ marginRight: '0.6em', fontSize: '0.9em' }} /> khjeon1994@optmier.com
                         </div>
                         <div>
-                            기술/개발 관련 <FiMail style={{ marginRight: '0.6em', fontSize: '0.9em' }} /> chyh1900@gmail.com
+                            기술/개발 관련 <FiMail style={{ marginRight: '0.6em', fontSize: '0.9em' }} /> chyh1900@optmier.com
                         </div>
                     </div>
 

@@ -1,63 +1,48 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
-import { Fade } from 'react-reveal';
-import OptmierLogo from '../images/optmier_logo_color_vertical.png';
+import OptmierLogo from '../images/altrid_logo_white_horizon.png';
 import '../styles/footer.scss';
 
-const FooterLogo = React.memo(function FooterRoot() {
+function Footer() {
     return (
-        <div className="footer-logo">
-            <img src={OptmierLogo} alt="Go to home..." />
-        </div>
-    );
-});
-
-const FooterContent = React.memo(function FooterContent() {
-    return (
-        <div className="footer-contents">
-            <p>
-                {/* <span>대표 전광휘</span> | <span>사업자등록번호 309-30-62706</span>
-                <br></br> */}
-                서울시 관악구 관악로 1 32-1 2층 201호 (서울대학교 해동학술관)
-                <br></br>
-                <span>
-                    전화: <a href="tel:123-456-7890">010-5912-1545</a>
-                </span>
-                {' | '}
-                <span>
-                    이메일: <a href="mailto:khjeon1994@gmail.com">khjeon1994@gmail.com</a>
-                </span>
-            </p>
-            <p>© 2020 by Eduity for Infinite Pioneer all right reserved.</p>
-        </div>
-    );
-});
-
-function Footer({ optStatic }) {
-    return (
-        <div className="footer-root">
-            <Grid container spacing={0}>
-                <Grid item xs={12} sm={5}>
-                    {optStatic ? (
-                        <FooterLogo />
-                    ) : (
-                        // <Fade bottom distance="72px" duration={800} fraction={0.5}>
-                        <FooterLogo />
-                        // </Fade>
-                    )}
-                </Grid>
-                <Grid item xs={12} sm={7}>
-                    {optStatic ? (
-                        <FooterContent />
-                    ) : (
-                        // <Fade bottom distance="72px" duration={800} delay={200} fraction={0.5}>
-                        <FooterContent />
-                        // </Fade>
-                    )}
-                </Grid>
-            </Grid>
-        </div>
+        <footer>
+            <div className="contents">
+                <div className="left">
+                    <div className="menus">
+                        <div className="item">
+                            <a href="https://altridedge.com/" style={{ fontWeight: 600 }}>
+                                ALTRID
+                            </a>
+                        </div>
+                        <div className="item">
+                            <a href="http://optmier.com/">Optmier 소개</a>
+                        </div>
+                        <div className="item">
+                            <a href="https://www.altridedge.com/customer-service/faq">고객센터</a>
+                        </div>
+                        <div className="item">
+                            <a href="https://www.notion.so/optmier/Optmier-Help-Center-8e6f5fe90beb42f0a10cb9b11a84f22a">
+                                이용 약관 및 개인정보 보호 정책
+                            </a>
+                        </div>
+                    </div>
+                    <div className="infos">
+                        대표 전광휘 | 전화<a href="tel:010-5912-1545"> 010-5912-1545</a> | 이메일
+                        <a href="mailto:rikjeon94@optmier.com"> rikjeon94@optmier.com</a> | 사업자등록번호 309-30-62706 <br />
+                        기술 지원 <a href="mailto:chsi1995@optmier.com"> chsi1995@optmier.com(최세인)</a> |{' '}
+                        <a href="mailto:jun094@optmier.com"> jun094@optmier.com(최준영)</a>
+                        <br />
+                        주소 서울시 광진구 광나루로19길 23 1층 104호(세종대학교 캠퍼스타운 가온누리1)
+                    </div>
+                </div>
+                <div className="right">
+                    <div className="logo">
+                        <img src={OptmierLogo} alt="footer logo" />
+                    </div>
+                    <div className="copyright">© 2020 by Optmier all right reserved.</div>
+                </div>
+            </div>
+        </footer>
     );
 }
 
-export default React.memo(Footer);
+export default Footer;

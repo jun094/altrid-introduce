@@ -198,7 +198,7 @@ function Section2() {
             id: 3,
             ref: itemsRef[3],
             active: false,
-            text: '시선흐름 측정',
+            text: '관찰 리포트',
             itemImg: ImgItem4,
         },
     ]);
