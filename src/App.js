@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Nav from './components/Nav';
-import Footer from './components/Footer';
+import Footer from './components/Footer2';
 import Main from './pages/Main';
 import Service from './pages/Service';
 import { Route } from 'react-router-dom';

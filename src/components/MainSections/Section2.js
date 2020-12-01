@@ -19,7 +19,9 @@ function Section2() {
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>별도의 장치 없이, 노트북 웹캠을 활용한 시선 측정</h4>
+                    <h4>
+                        별도의 장치 없이, 노트북 웹캠을 통한 <span>시선흐름 측정</span>
+                    </h4>
                 </div>
             </Fade>
             <Fade delay={200} duration={666}>
@@ -27,7 +29,33 @@ function Section2() {
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>점수를 자동 수치화하여 빠른 결과 도출</h4>
+                    <h4>시선 응시점 개수, 평균 응시 속도 등 시선 데이터 기록</h4>
+                </div>
+            </Fade>
+            <Fade delay={200} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>답 변경 횟수, 문제 풀이 패턴 등 여러가지 관찰 데이터 기록</h4>
+                </div>
+            </Fade>
+        </>,
+        <>
+            <Fade delay={0} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>알트리드 자체 에디터를 통해 즉시, 문제 제작 가능</h4>
+                </div>
+            </Fade>
+            <Fade delay={200} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>파일 업로드를 통한, 문제 제작 가능</h4>
                 </div>
             </Fade>
             <Fade delay={400} duration={666}>
@@ -35,7 +63,7 @@ function Section2() {
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>빠른 시간 내의 객관적인 학습 진단 지표 제공</h4>
+                    <h4>기한 설정이 가능한 과제 생성</h4>
                 </div>
             </Fade>
         </>,
@@ -45,7 +73,7 @@ function Section2() {
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>시선흐름 추적을 통한 학습자 언어, 인지 능력과 문제 정답률의 상관관계 분석</h4>
+                    <h4>과제에 대한 클래스별 자동 점수 수치화 및 학생별 진행률 확인</h4>
                 </div>
             </Fade>
             <Fade delay={200} duration={666}>
@@ -53,27 +81,7 @@ function Section2() {
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>독해력 8가지 요소에 대한 AI기반 자동 점수 수치화</h4>
-                </div>
-            </Fade>
-        </>,
-        <>
-            <Fade delay={0} duration={666}>
-                <div className="descriptor">
-                    <div className="head-symbol">
-                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                    </div>
-                    <h4>
-                        <span>분석 시스템 Pierce</span> 의 학습 솔루션 분석 결과값을 활용하여 AI 분석
-                    </h4>
-                </div>
-            </Fade>
-            <Fade delay={200} duration={666}>
-                <div className="descriptor">
-                    <div className="head-symbol">
-                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                    </div>
-                    <h4>부진한 영역과 관련된 문제유형 문제 추천</h4>
+                    <h4>클래스의 영역별 평균 점수, 문제별 평균 점수 등 다수 리포트 제공</h4>
                 </div>
             </Fade>
         </>,
@@ -84,7 +92,7 @@ function Section2() {
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
                     <h4>
-                        <span>실시간 화상 교육</span>을 통한 시선 흐름 및 문제풀이에 대한 교육 진행
+                        학생별 취약영역 <span>TOP 3 선별</span> 및 문제별 풀이시간 확인
                     </h4>
                 </div>
             </Fade>
@@ -93,12 +101,11 @@ function Section2() {
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>
-                        실시간 피드백이 가능한 <span>1대1 맞춤형 교육</span> 진행
-                    </h4>
+                    <h4>이전 과제 대비, 비교 성취도 및 유형별 정답률 확인 </h4>
                 </div>
             </Fade>
         </>,
+
         <></>,
     ];
     const itemDescriptorsNoAnim = [
@@ -107,19 +114,36 @@ function Section2() {
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>별도의 장치 없이, 노트북 웹캠을 활용한 시선 측정</h4>
+                <h4>
+                    별도의 장치 없이, 노트북 웹캠을 통한 <span>시선흐름 측정</span>
+                </h4>
             </div>
             <div className="descriptor">
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>점수를 자동 수치화하여 빠른 결과 도출</h4>
+                <h4>답 변경 횟수, 문제 풀이 패턴, 소요시간 등 여러가지 관찰 데이터 기록</h4>
+            </div>
+        </>,
+
+        <>
+            <div className="descriptor">
+                <div className="head-symbol">
+                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                </div>
+                <h4>알트리드 자체 에디터를 통해 즉시, 문제 제작 가능</h4>
             </div>
             <div className="descriptor">
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>빠른 시간 내의 객관적인 학습 진단 지표 제공</h4>
+                <h4>파일 업로드를 통한, 문제 제작 가능</h4>
+            </div>
+            <div className="descriptor">
+                <div className="head-symbol">
+                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                </div>
+                <h4>기한 설정이 가능한 과제 생성</h4>
             </div>
         </>,
         <>
@@ -127,13 +151,13 @@ function Section2() {
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>시선흐름 추적을 통한 학습자 언어, 인지 능력과 문제 정답률의 상관관계 분석</h4>
+                <h4>과제에 대한 클래스별 자동 점수 수치화 및 학생별 진행률 확인</h4>
             </div>
             <div className="descriptor">
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>독해력 8가지 요소에 대한 AI기반 자동 점수 수치화</h4>
+                <h4>클래스의 영역별 평균 점수, 문제별 평균 점수 등 다수 리포트 제공</h4>
             </div>
         </>,
         <>
@@ -142,32 +166,14 @@ function Section2() {
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
                 <h4>
-                    <span>분석 시스템 Pierce</span> 의 학습 솔루션 분석 결과값을 활용하여 AI 분석
+                    학생별 취약영역 <span>TOP 3 선별</span> 및 유형별 정답률 확인
                 </h4>
             </div>
             <div className="descriptor">
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>부진한 영역과 관련된 문제유형 문제 추천</h4>
-            </div>
-        </>,
-        <>
-            <div className="descriptor">
-                <div className="head-symbol">
-                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                </div>
-                <h4>
-                    <span>실시간 화상 교육</span>을 통한 시선 흐름 및 문제풀이에 대한 교육 진행
-                </h4>
-            </div>
-            <div className="descriptor">
-                <div className="head-symbol">
-                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                </div>
-                <h4>
-                    실시간 피드백이 가능한 <span>1대1 맞춤형 교육</span> 진행
-                </h4>
+                <h4>이전 과제 대비, 비교 성취도 확인</h4>
             </div>
         </>,
         <></>,
@@ -177,28 +183,28 @@ function Section2() {
             id: 0,
             ref: itemsRef[0],
             active: true,
-            text: '과제 생성',
+            text: '관찰기록 리포트',
             itemImg: ImgItem1,
         },
         {
             id: 1,
             ref: itemsRef[1],
             active: false,
-            text: '클래스별 리포트',
+            text: '과제 생성',
             itemImg: ImgItem2,
         },
         {
             id: 2,
             ref: itemsRef[2],
             active: false,
-            text: '학생별 리포트',
+            text: '클래스별 리포트',
             itemImg: ImgItem3,
         },
         {
             id: 3,
             ref: itemsRef[3],
             active: false,
-            text: '관찰 리포트',
+            text: '학생별 리포트',
             itemImg: ImgItem4,
         },
     ]);
