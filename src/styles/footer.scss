@@ -1,18 +1,17 @@
 $primaryColor: #13e2a1;
 $secondaryColor: #3b168a;
 $greenTintGrey: #f7f9f8;
-$backgroundFooter: #eaeaea;
 $textFooterInfo: #8a8a8a;
 $textFooterMenu: #3a3a3a;
 
 footer {
-    background-color: $backgroundFooter;
+    background-color: #f7f9f8;
     color: $textFooterInfo;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 144px;
+    min-height: 180px;
     font-size: 12px;
 
     & .contents {
