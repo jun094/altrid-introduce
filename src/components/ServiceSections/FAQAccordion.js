@@ -69,7 +69,7 @@ export default function CustomizedAccordions() {
                 <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                         <span className="faq-title">
-                            01. 시선흐름 분석 서비스를 이용하기 위한 최소사양은 어떻게 되나요?
+                            01. 시선흐름 서비스를 이용하기 위한 최소사양은 어떻게 되나요?
                             <IoIosArrowDown style={{ marginLeft: '1rem', width: '30px' }} />
                         </span>
                     </AccordionSummary>
@@ -85,13 +85,13 @@ export default function CustomizedAccordions() {
                 <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                     <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                         <span className="faq-title">
-                            02. 분석 테스트의 난이도는 어떻게 되나요? <IoIosArrowDown style={{ marginLeft: '1rem', width: '30px' }} />
+                            02. 한 학원에서 여러 선생님이 이용 가능한가요?
+                            <IoIosArrowDown style={{ marginLeft: '1rem', width: '30px' }} />
                         </span>
                     </AccordionSummary>
                     <AccordionDetails>
                         <span>
-                            테스트는 TOFEL 문제와 알트리드 자체 제작 문제로 선택이 가능합니다. TOFEL 문제는 난이도 중이며, 자체 제작 문제는
-                            난이도 하입니다.
+                            000버전 구매시,학원 코드가 부여됩니다. 회원가입시 학원코드를 입력하면 한 학원에서 여러 선생님이 이용 가능합니다.
                         </span>
                     </AccordionDetails>
                 </Accordion>
@@ -100,11 +100,19 @@ export default function CustomizedAccordions() {
                 <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                     <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                         <span className="faq-title">
-                            03. 분석 테스트의 양은 얼마나 되나요? <IoIosArrowDown style={{ marginLeft: '1rem', width: '30px' }} />
+                            03. 과제 생성 시, '직접 생성'과 '파일 업로드 생성'은 무엇이 다른가요?
+                            <IoIosArrowDown style={{ marginLeft: '1rem', width: '30px' }} />
                         </span>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <span>1개 set 당 5개의 문제로 총 3 set의 문제가 제공됩니다. 테스트 시간은 총 17분입니다.</span>
+                        <span>
+                            과제 생성 방법에는 2가지 방법이 존재합니다. <br />
+                            <br /> '직접 생성'의 경우, 알트리드에서 제작한 에디터를 통해 과제 제작이 가능하며, 과제 생성 즉시 학생들에게
+                            과제를 게시할 수 있습니다. <br />
+                            <br />
+                            '파일 업로드 생성'의 경우, 선생님들께서 기존이 만들어놓은 파일(hwp, pdf, word)이 있으시다면, 파일 업로드를 통해
+                            과제 제작이 가능합니다. &nbsp; 그러나, 파일 업로드의 경우 과제를 웹 view로 변환하는데 다소 시간이 소요됩니다.
+                        </span>
                     </AccordionDetails>
                 </Accordion>
             </Fade>
@@ -113,14 +121,14 @@ export default function CustomizedAccordions() {
                 <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                     <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                         <span className="faq-title">
-                            04. 시선흐름 분석 서비스를 모바일에서 이용할 수 있나요?
+                            04. 서비스를 모바일에서 이용할 수 있나요?
                             <IoIosArrowDown style={{ marginLeft: '1rem', width: '30px' }} />
                         </span>
                     </AccordionSummary>
                     <AccordionDetails>
                         <span>
-                            현재 분석 서비스는 웹 버전만 출시된 상태입니다. ‘결과 분석표’ 는 모바일에서 조회가 가능하나, <br /> ‘시선흐름
-                            분석서비스’는 반드시 웹 브라우저와 함께 이용해주시면 감사하겠습니다.
+                            현재 알트리트 학습 관리 서비스(LMS)는 웹 버전만 출시된 상태입니다. <br /> 반드시 웹 브라우저와 함께 이용해주시면
+                            감사하겠습니다.
                         </span>
                     </AccordionDetails>
                 </Accordion>
@@ -130,11 +138,16 @@ export default function CustomizedAccordions() {
                 <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                     <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                         <span className="faq-title">
-                            05. 시선흐름 분석 서비스는 유료 서비스 인가요? <IoIosArrowDown style={{ marginLeft: '1rem', width: '30px' }} />
+                            05. 유형별 분석의 진행률은 무엇인가요? <IoIosArrowDown style={{ marginLeft: '1rem', width: '30px' }} />
                         </span>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <span>현재 시선흐름 분석 서비스는 베타버전으로 3번의 무료 체험 기회가 제공됩니다.</span>
+                        <span>
+                            유형별 분석의 경우, 과제의 최소 조건이 만족되어야 'AI 유형별 분석'이 가능합니다.
+                            <br />
+                            <br />
+                            최소 조건은 토플 유형 10가지 중 최소 3가지 유형 이상, 한 유형 당 최소 3문제 이상이 포함되어야 합니다.
+                        </span>
                     </AccordionDetails>
                 </Accordion>
             </Fade>
