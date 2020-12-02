@@ -54,7 +54,7 @@ const NavMenuItem = React.memo(function NavMenuItem({ linkTo, children }) {
         <NavLink
             to={linkTo}
             activeStyle={{
-                borderBottom: '3px solid #00e099',
+                borderBottom: '4px solid #00e099',
                 display: 'flex',
                 alignItems: 'center',
                 height: '100%',
@@ -119,7 +119,7 @@ function Nav({ optStatic, history }) {
                     <div className="nav-menus">
                         <NavMenuItem linkTo="/service">이용방법</NavMenuItem>
                         <NavMenuItem linkTo="/customer-service/faq">고객센터</NavMenuItem>
-                        {/* <NavMenuItem linkTo="/bookonline">Pierce 상담신청</NavMenuItem> */}
+                        {/* <NavMenuItem linkTo="/price">Pierce 상담신청</NavMenuItem> */}
                     </div>
 
                     <div className="nav-right">
@@ -133,7 +133,7 @@ function Nav({ optStatic, history }) {
                             type="button"
                             className="normal login"
                             onClick={() => {
-                                history.push('/bookonline');
+                                history.push('/price');
                             }}
                         >
                             무료체험하기

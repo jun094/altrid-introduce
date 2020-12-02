@@ -14,7 +14,7 @@ function BannerFreeTrial({ history }) {
                     type="button"
                     className="normal in-section no-op"
                     onClick={() => {
-                        history.push('/bookonline');
+                        history.push('/price');
                     }}
                 >
                     무료체험하기

@@ -76,7 +76,7 @@ function Hambuger() {
                             <span className="list-text">{nav_menus.product[window.lang]}</span>
                         </ListItem>
                     </NavMenuItem>
-                    <NavMenuItem linkTo="/bookonline">
+                    <NavMenuItem linkTo="/price">
                         <ListItem button>
                             <span className="list-text">{nav_menus.book_online[window.lang]}</span>
                         </ListItem>
@@ -91,7 +91,7 @@ function Hambuger() {
                             <span className="list-text">{'고객센터'}</span>
                         </ListItem>
                     </NavMenuItem>
-                    <NavMenuItem linkTo="/bookonline">
+                    <NavMenuItem linkTo="/price">
                         <ListItem button>
                             <span className="list-text">{'무료체험 신청'}</span>
                         </ListItem>

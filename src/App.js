@@ -39,7 +39,7 @@ function App() {
                         <Route path="/" component={Main} exact />
                         <Route path="/service" component={Service} exact />
                         <Route path="/price" component={Price} exact />
-                        <Route path="/customer-service" component={CustomerServices} exact />
+                        <Route path="/customer-service" component={CustomerServices} />
                         <Route>
                             <Error />
                         </Route>
