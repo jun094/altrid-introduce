@@ -32,56 +32,14 @@ function Section2() {
                     <h4>시선 응시점 개수, 평균 응시 속도 등 시선 데이터 기록</h4>
                 </div>
             </Fade>
-            <Fade delay={200} duration={666}>
-                <div className="descriptor">
-                    <div className="head-symbol">
-                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                    </div>
-                    <h4>답 변경 횟수, 문제 풀이 패턴 등 여러가지 관찰 데이터 기록</h4>
-                </div>
-            </Fade>
-        </>,
-        <>
-            <Fade delay={0} duration={666}>
-                <div className="descriptor">
-                    <div className="head-symbol">
-                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                    </div>
-                    <h4>알트리드 자체 에디터를 통해 즉시, 문제 제작 가능</h4>
-                </div>
-            </Fade>
-            <Fade delay={200} duration={666}>
-                <div className="descriptor">
-                    <div className="head-symbol">
-                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                    </div>
-                    <h4>파일 업로드를 통한, 문제 제작 가능</h4>
-                </div>
-            </Fade>
             <Fade delay={400} duration={666}>
                 <div className="descriptor">
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>기한 설정이 가능한 과제 생성</h4>
-                </div>
-            </Fade>
-        </>,
-        <>
-            <Fade delay={0} duration={666}>
-                <div className="descriptor">
-                    <div className="head-symbol">
-                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                    </div>
-                    <h4>과제에 대한 클래스별 자동 점수 수치화 및 학생별 진행률 확인</h4>
-                </div>
-            </Fade>
-            <Fade delay={200} duration={666}>
-                <div className="descriptor">
-                    <div className="head-symbol">
-                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                    </div>
-                    <h4>클래스의 영역별 평균 점수, 문제별 평균 점수 등 다수 리포트 제공</h4>
+                    <h4>
+                        답 변경 횟수, 문제 풀이 패턴 등 여러가지 <span>관찰 데이터</span> 기록
+                    </h4>
                 </div>
             </Fade>
         </>,
@@ -92,7 +50,7 @@ function Section2() {
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
                     <h4>
-                        학생별 취약영역 <span>TOP 3 선별</span> 및 문제별 풀이시간 확인
+                        알트리드 <span>자체 에디터</span>를 통해 즉시, 문제 제작 가능
                     </h4>
                 </div>
             </Fade>
@@ -101,7 +59,69 @@ function Section2() {
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>이전 과제 대비, 비교 성취도 및 유형별 정답률 확인 </h4>
+                    <h4>
+                        <span>파일 업로드</span>를 통한, 문제 제작 가능
+                    </h4>
+                </div>
+            </Fade>
+            <Fade delay={400} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>
+                        기한 설정 및 <span>실시간 진행 상황</span>을 알 수 있는 과제
+                    </h4>
+                </div>
+            </Fade>
+        </>,
+        <>
+            <Fade delay={0} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>
+                        한눈에 볼 수 있는 <span>클래스별 성적표</span>
+                    </h4>
+                </div>
+            </Fade>
+            <Fade delay={200} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>우리 반의 영역별 평균 점수, 가장 취학한 영역 등 다수 리포트 제공</h4>
+                </div>
+            </Fade>
+            <Fade delay={400} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>
+                        <span>시선흐름</span>과 <span>문제 풀이 패턴</span>에 대한 리포트 제공
+                    </h4>
+                </div>
+            </Fade>
+        </>,
+        <>
+            <Fade delay={0} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>
+                        <span>실시간 화상 교육</span>을 통한 시선 흐름 및 문제풀이에 대한 교육 진행
+                    </h4>
+                </div>
+            </Fade>
+            <Fade delay={200} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>실시간 피드백이 가능한 1대1 맞춤형 교육 진행</h4>
                 </div>
             </Fade>
         </>,
@@ -122,7 +142,9 @@ function Section2() {
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>답 변경 횟수, 문제 풀이 패턴, 소요시간 등 여러가지 관찰 데이터 기록</h4>
+                <h4>
+                    답 변경 횟수, 문제 풀이 패턴, 소요시간 등 여러가지 <span>관찰 데이터</span> 기록
+                </h4>
             </div>
         </>,
 
@@ -131,33 +153,25 @@ function Section2() {
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>알트리드 자체 에디터를 통해 즉시, 문제 제작 가능</h4>
+                <h4>
+                    알트리드 <span>자체 에디터</span>를 통해 즉시, 문제 제작 가능
+                </h4>
             </div>
             <div className="descriptor">
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>파일 업로드를 통한, 문제 제작 가능</h4>
+                <h4>
+                    <span>파일 업로드</span>를 통한, 문제 제작 가능
+                </h4>
             </div>
             <div className="descriptor">
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>기한 설정이 가능한 과제 생성</h4>
-            </div>
-        </>,
-        <>
-            <div className="descriptor">
-                <div className="head-symbol">
-                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                </div>
-                <h4>과제에 대한 클래스별 자동 점수 수치화 및 학생별 진행률 확인</h4>
-            </div>
-            <div className="descriptor">
-                <div className="head-symbol">
-                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
-                </div>
-                <h4>클래스의 영역별 평균 점수, 문제별 평균 점수 등 다수 리포트 제공</h4>
+                <h4>
+                    기한 설정 및 <span>실시간 진행 상황</span>을 알 수 있는 과제
+                </h4>
             </div>
         </>,
         <>
@@ -166,14 +180,38 @@ function Section2() {
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
                 <h4>
-                    학생별 취약영역 <span>TOP 3 선별</span> 및 유형별 정답률 확인
+                    한눈에 볼 수 있는 <span>클래스별 성적표</span>
                 </h4>
             </div>
             <div className="descriptor">
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>이전 과제 대비, 비교 성취도 확인</h4>
+                <h4>우리 반의 영역별 평균 점수, 가장 취학한 영역 등 다수 리포트 제공</h4>
+            </div>
+            <div className="descriptor">
+                <div className="head-symbol">
+                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                </div>
+                <h4>
+                    <span>시선흐름</span>과 <span>문제 풀이 패턴</span>에 대한 리포트 제공
+                </h4>
+            </div>
+        </>,
+        <>
+            <div className="descriptor">
+                <div className="head-symbol">
+                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                </div>
+                <h4>
+                    <span>실시간 화상 교육</span>을 통한 시선 흐름 및 문제풀이에 대한 교육 진행
+                </h4>
+            </div>
+            <div className="descriptor">
+                <div className="head-symbol">
+                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                </div>
+                <h4>실시간 피드백이 가능한 1대1 맞춤형 교육 진행</h4>
             </div>
         </>,
         <></>,
