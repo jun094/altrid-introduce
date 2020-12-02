@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Main from './pages/Main';
+import Error from './pages/Error';
 import Service from './pages/Service';
-import { Route } from 'react-router-dom';
-import BookOnline from './pages/BookOnline';
+import { Switch, Route } from 'react-router-dom';
+import Price from './pages/Price';
 import ScrollTop from './components/ScrollTop';
-import { firebase } from './database/DBCtrl';
 import { Element } from 'react-scroll';
 import './styles/common.scss';
 import CustomerServices from './pages/CustomerServices';
@@ -35,10 +35,15 @@ function App() {
             <Nav optStatic={window.location.pathname === '/' ? false : true} />
             <ScrollTop>
                 <main>
-                    <Route path="/" component={Main} exact />
-                    <Route path="/service" component={Service} />
-                    <Route path="/bookonline" component={BookOnline} />
-                    <Route path="/customer-service" component={CustomerServices} />
+                    <Switch>
+                        <Route path="/" component={Main} exact />
+                        <Route path="/service" component={Service} exact />
+                        <Route path="/price" component={Price} exact />
+                        <Route path="/customer-service" component={CustomerServices} exact />
+                        <Route>
+                            <Error />
+                        </Route>
+                    </Switch>
                 </main>
             </ScrollTop>
             <Footer optStatic={window.location.pathname === '/' ? false : true} />
