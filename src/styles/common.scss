@@ -92,6 +92,9 @@ body {
     }
 
     button {
+        outline: 0;
+        border: 0;
+        cursor: pointer;
         &.normal {
             background-color: #13e2a1;
             border: none;

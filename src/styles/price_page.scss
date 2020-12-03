@@ -1,0 +1,159 @@
+$fistColor: #13e2a1;
+$secondColor: #3b168a;
+
+#price_section_1 {
+    background-color: #f7f9fc;
+
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 1024px;
+        width: 100%;
+        min-height: inherit;
+        margin: 50px auto;
+
+        & .price-badge {
+            cursor: pointer;
+            width: 510px;
+            padding: 0.5rem 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 11px;
+            background-color: $secondColor;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            & .badge-left {
+                display: flex;
+                align-items: center;
+
+                & p {
+                    padding-left: 1rem;
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+            & .badge-right {
+                display: flex;
+                align-items: center;
+
+                & p {
+                    padding-right: 1rem;
+                    font-size: 0.7rem;
+                    font-weight: 400;
+                    color: $fistColor;
+                }
+            }
+        }
+
+        & .price-title {
+            margin-top: 95px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & .title-left {
+                display: flex;
+                flex-direction: column;
+
+                & h2 {
+                    color: black;
+                    margin: 0 0 1rem 0;
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                & p {
+                    margin: 0;
+                    color: #848199;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+            & .title-right {
+                display: flex;
+
+                & .btn-left {
+                    border-radius: 8px 4px 4px 8px;
+                }
+                & .btn-right {
+                    border-radius: 4px 8px 8px 4px;
+                }
+            }
+        }
+
+        & .price-table {
+            margin-top: 95px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            & .col {
+                font-size: 1rem;
+                font-weight: 500;
+                color: #575555;
+            }
+
+            & .name {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            & .child {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            & .table-header {
+                height: 110px;
+                margin-bottom: 30px;
+
+                & h2 {
+                    font-size: 1.75rem;
+                    color: $secondColor;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                & .table-subTitle {
+                    margin-top: 1rem;
+                    font-size: 1.25rem;
+                    color: black;
+                    font-weight: 600;
+
+                    & span {
+                        margin: 0;
+                        font-size: 0.75rem;
+                        color: #b4a9a9;
+                        font-weight: 500;
+                    }
+                    & .low {
+                        color: black;
+                    }
+                }
+            }
+            & .table-line {
+                height: 65px;
+
+                & .table-cell {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        & .price-footer {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & .price-button {
+                background-color: $fistColor;
+                color: white;
+                font-size: 1rem;
+                padding: 0.7rem 2rem;
+                border-radius: 11px;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Free":{
+        "price": "00,000",
+        "draft_class":1,
+        "draft_assignment":1,
+        "draft_file_assignment": 0,
+        "class_report":1,
+        "AI_report":1,
+        "eyetrack":"무로체험 2회",
+        "pattern_analysis":0,
+        "online_video":0
+    },
+    "Standard":{
+        "price": "00,000",
+        "draft_class":1,
+        "draft_assignment":1,
+        "draft_file_assignment": "계정당 월 5회",
+        "class_report":1,
+        "AI_report":1,
+        "eyetrack":"무제한",
+        "pattern_analysis":1,
+        "online_video":0
+    },
+    "Premium":{
+        "price": "00,000",
+        "draft_class":1,
+        "draft_assignment":1,
+        "draft_file_assignment": "계정당 월 10회",
+        "class_report":1,
+        "AI_report":1,
+        "eyetrack":"무제한",
+        "pattern_analysis":1,
+        "online_video":1
+    }
+}
