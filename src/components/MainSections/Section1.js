@@ -29,7 +29,7 @@ function Section1({ history }) {
                                 type="button"
                                 className="normal in-section"
                                 onClick={() => {
-                                    history.push('/price');
+                                    history.push('/pricing');
                                 }}
                             >
                                 무료체험하기

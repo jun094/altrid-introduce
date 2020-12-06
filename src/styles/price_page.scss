@@ -20,8 +20,8 @@ $secondColor: #3b168a;
             align-items: center;
             justify-content: space-between;
             border-radius: 11px;
-            background-color: $secondColor;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+            transition: all 0.3s;
             & .badge-left {
                 display: flex;
                 align-items: center;
@@ -30,7 +30,6 @@ $secondColor: #3b168a;
                     padding-left: 1rem;
                     font-size: 0.875rem;
                     font-weight: 600;
-                    color: white;
                 }
             }
             & .badge-right {
@@ -46,8 +45,15 @@ $secondColor: #3b168a;
             }
         }
 
+        & .price-badge:hover {
+            & .badge-right {
+                transition: all 0.5s;
+                margin-right: -5px;
+            }
+        }
+
         & .price-title {
-            margin-top: 95px;
+            margin-top: 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -90,8 +96,15 @@ $secondColor: #3b168a;
                 font-size: 1rem;
                 font-weight: 500;
                 color: #575555;
+                padding: 1rem 0;
             }
 
+            & .col:nth-child(n + 2):hover {
+                transition: all 0.3s;
+                border-radius: 11px;
+                background: #ffffff;
+                box-shadow: 20px 22px 24px rgba(23, 18, 63, 0.120028);
+            }
             & .name {
                 display: flex;
                 justify-content: flex-start;
@@ -114,24 +127,27 @@ $secondColor: #3b168a;
                     margin: 0;
                 }
                 & .table-subTitle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
                     margin-top: 1rem;
-                    font-size: 1.25rem;
                     color: black;
                     font-weight: 600;
+                    font-size: 0.75rem;
+                    height: 50px;
 
-                    & span {
-                        margin: 0;
-                        font-size: 0.75rem;
-                        color: #b4a9a9;
-                        font-weight: 500;
-                    }
-                    & .low {
-                        color: black;
+                    & > div {
+                        display: flex;
+                        & span {
+                            margin: 0 0 0 0.5rem;
+                            color: #b4a9a9;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
             & .table-line {
-                height: 65px;
+                height: 50px;
 
                 & .table-cell {
                     display: flex;
@@ -142,7 +158,7 @@ $secondColor: #3b168a;
         }
 
         & .price-footer {
-            margin-top: 30px;
+            margin-top: 50px;
             width: 100%;
             display: flex;
             align-items: center;
@@ -150,8 +166,9 @@ $secondColor: #3b168a;
             & .price-button {
                 background-color: $fistColor;
                 color: white;
+                width: 280px;
                 font-size: 1rem;
-                padding: 0.7rem 2rem;
+                padding: 1rem 0;
                 border-radius: 11px;
             }
         }

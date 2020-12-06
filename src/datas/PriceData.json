@@ -1,6 +1,7 @@
 {
     "Free":{
         "price": "00,000",
+        "price2": "99,999",
         "draft_class":1,
         "draft_assignment":1,
         "draft_file_assignment": 0,
@@ -12,6 +13,7 @@
     },
     "Standard":{
         "price": "00,000",
+        "price2": "99,999",
         "draft_class":1,
         "draft_assignment":1,
         "draft_file_assignment": "계정당 월 5회",
@@ -23,6 +25,7 @@
     },
     "Premium":{
         "price": "00,000",
+        "price2": "99,999",
         "draft_class":1,
         "draft_assignment":1,
         "draft_file_assignment": "계정당 월 10회",

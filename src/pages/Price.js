@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import SectionFrame from '../components/SectionFrame';
 import '../styles/price_page.scss';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PriceData from '../datas/PriceData.json';
 
 const PriceButton = styled.button`
@@ -13,6 +13,22 @@ const PriceButton = styled.button`
 
     background-color: ${(props) => (props.click ? '#3b168a' : 'white')};
     color: ${(props) => (props.click ? '#13E2A1' : '#C4C4C4')};
+`;
+
+const BadgeButton = styled.a`
+    background-color: ${(props) => (props.type === 'group' ? '#3b168a' : 'white')};
+    color: ${(props) => (props.type === 'group' ? 'white' : '#1d3853')};
+`;
+
+const MoneyNum = styled.p`
+    margin: 0;
+    font-size: 1.25rem;
+    ${(props) =>
+        props.type === 'group' &&
+        css`
+            height: 11px;
+            border-bottom: 2.5px solid black;
+        `}
 `;
 
 const PriceItems = ({ type }) => {
@@ -40,13 +56,30 @@ const PriceItems = ({ type }) => {
 };
 
 function Price() {
+    const [priceState, setPriceState] = useState('personal');
+
+    const handlePriceType = (e) => {
+        const { name } = e.target;
+
+        if (name === 'personal') {
+            setPriceState('personal');
+        } else if (name === 'group') {
+            setPriceState('group');
+        }
+    };
     return (
         <>
             <Helmet>
                 <title>알트리드, 불필요한 시간과 비용을 없애자! | Eduity for infinite pioneer</title>
             </Helmet>
             <SectionFrame id="price_section_1">
-                <div className="price-badge">
+                <BadgeButton
+                    type={priceState}
+                    href="https://www.notion.so/optmier/71ef2aa559d84fb7a62ed8d9c79c6ec6"
+                    target="_blank"
+                    alt="badge"
+                    className="price-badge"
+                >
                     <div className="badge-left">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -69,7 +102,7 @@ function Price() {
                             />
                         </svg>
                     </div>
-                </div>
+                </BadgeButton>
 
                 <div className="price-title">
                     <div className="title-left">
@@ -77,10 +110,20 @@ function Price() {
                         <p>베타 기간 한정, 모든 기능에 대하여 할인된 가격으로 제공해드립니다.</p>
                     </div>
                     <div className="title-right">
-                        <PriceButton className="btn-left" click={true}>
+                        <PriceButton
+                            className="btn-left"
+                            click={priceState === 'personal' ? true : false}
+                            name="personal"
+                            onClick={handlePriceType}
+                        >
                             개인
                         </PriceButton>
-                        <PriceButton className="btn-right" click={false}>
+                        <PriceButton
+                            className="btn-right"
+                            click={priceState === 'group' ? true : false}
+                            name="group"
+                            onClick={handlePriceType}
+                        >
                             학원
                         </PriceButton>
                     </div>
@@ -104,8 +147,18 @@ function Price() {
                             <div className="child table-header">
                                 <h2>{i}</h2>
                                 <div className="table-subTitle">
-                                    {PriceData[i]['price']}
-                                    <span className="low">원</span> <span>(학생당/월)</span>
+                                    <div>
+                                        <MoneyNum type={priceState}>{PriceData[i]['price']}</MoneyNum>원<span>(학생당/월)</span>
+                                    </div>
+                                    <div style={{ marginTop: '5px' }}>
+                                        {priceState === 'group' ? (
+                                            <>
+                                                <MoneyNum>{PriceData[i]['price2']}</MoneyNum>원<span>(학생당/월)</span>
+                                            </>
+                                        ) : (
+                                            ''
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                             <div className="child table-line">
@@ -137,7 +190,14 @@ function Price() {
                 </div>
 
                 <div className="price-footer">
-                    <button className="price-button">도입 문의하기</button>
+                    <button
+                        className="price-button"
+                        onClick={() => {
+                            alert('준비 중입니다!!\n문의는 jun094@optmier.com으로 해주세요.');
+                        }}
+                    >
+                        도입 문의하기
+                    </button>
                 </div>
             </SectionFrame>
         </>
