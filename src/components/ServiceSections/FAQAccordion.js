@@ -65,7 +65,7 @@ export default function CustomizedAccordions() {
 
     return (
         <div>
-            <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
+            <Fade bottom distance={'3rem'} delay={333} duration={666}>
                 <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                         <span className="faq-title">
@@ -81,7 +81,7 @@ export default function CustomizedAccordions() {
                     </AccordionDetails>
                 </Accordion>
             </Fade>
-            <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
+            <Fade bottom distance={'3rem'} delay={333} duration={666}>
                 <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                     <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                         <span className="faq-title">
@@ -97,7 +97,7 @@ export default function CustomizedAccordions() {
                     </AccordionDetails>
                 </Accordion>
             </Fade>
-            <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
+            <Fade bottom distance={'3rem'} delay={333} duration={666}>
                 <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                     <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                         <span className="faq-title">
@@ -118,7 +118,7 @@ export default function CustomizedAccordions() {
                 </Accordion>
             </Fade>
 
-            <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
+            <Fade bottom distance={'3rem'} delay={333} duration={666}>
                 <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                     <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                         <span className="faq-title">
@@ -135,7 +135,7 @@ export default function CustomizedAccordions() {
                 </Accordion>
             </Fade>
 
-            <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
+            <Fade bottom distance={'3rem'} delay={333} duration={666}>
                 <Accordion square expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
                     <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                         <span className="faq-title">

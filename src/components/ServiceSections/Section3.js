@@ -18,7 +18,7 @@ function Section3() {
                 title="시선흐름 측정 방법을 직접 확인해보세요."
                 subText="동영상을 통해 시선흐름 측정 방법을 확인할 수 있습니다."
             />
-            <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
+            <Fade bottom distance={'3rem'} delay={666} duration={666}>
                 {/* <video style={{ width: '100%' }} controls>
                     <source src="/videos/eyetracking_demo.mp4" type="video/mp4" />
                 </video> */}
