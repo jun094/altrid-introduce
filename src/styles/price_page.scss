@@ -67,12 +67,19 @@ $secondColor: #3b168a;
                     margin: 0 0 1rem 0;
                     font-size: 2rem;
                     font-weight: 600;
+                    line-height: 1.25;
                 }
                 & p {
                     margin: 0;
                     color: #848199;
                     font-size: 1rem;
                     font-weight: 400;
+                }
+
+                @media (min-width: 769px) and (max-width: 992px) {
+                    & span {
+                        display: block;
+                    }
                 }
             }
             & .title-right {
@@ -88,7 +95,7 @@ $secondColor: #3b168a;
         }
 
         & .price-table {
-            margin-top: 95px;
+            margin-top: 85px;
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -117,8 +124,8 @@ $secondColor: #3b168a;
                 justify-content: center;
             }
             & .table-header {
-                height: 110px;
-                margin-bottom: 30px;
+                height: 140px;
+                margin-bottom: 20px;
 
                 & h2 {
                     font-size: 1.75rem;
@@ -126,23 +133,26 @@ $secondColor: #3b168a;
                     font-weight: 600;
                     margin: 0;
                 }
+                & .table-subTitle-mobile {
+                    display: none;
+                }
                 & .table-subTitle {
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
-                    margin-top: 1rem;
+                    align-items: center;
                     color: black;
                     font-weight: 600;
                     font-size: 0.75rem;
-                    height: 50px;
 
+                    & span {
+                        margin: 0.5rem 0 0 0;
+                        color: #b4a9a9;
+                        font-weight: 500;
+                    }
                     & > div {
                         display: flex;
-                        & span {
-                            margin: 0 0 0 0.5rem;
-                            color: #b4a9a9;
-                            font-weight: 500;
-                        }
+                        align-items: center;
                     }
                 }
             }
@@ -153,6 +163,10 @@ $secondColor: #3b168a;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                }
+
+                & .table-desc-mobile {
+                    display: none;
                 }
             }
         }
@@ -170,6 +184,96 @@ $secondColor: #3b168a;
                 font-size: 1rem;
                 padding: 1rem 0;
                 border-radius: 11px;
+            }
+        }
+
+        @media (min-width: 0px) and (max-width: 768px) {
+            & {
+                margin: 15px auto;
+                align-items: center;
+                max-width: 480px;
+
+                & .price-badge {
+                    max-width: 550px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    & .badge-left {
+                        width: 85%;
+                    }
+                    & .badge-right {
+                        & > p {
+                            display: none;
+                        }
+                    }
+                }
+                & .price-title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    & .title-left {
+                        margin-bottom: 2rem;
+                    }
+                    & .title-right {
+                        width: 100%;
+                    }
+                }
+                & .price-table {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    & .web {
+                        display: none;
+                    }
+
+                    & .col {
+                        border-radius: 11px;
+                        background: #ffffff;
+                        box-shadow: 20px 22px 24px rgba(23, 18, 63, 0.120028);
+                        width: 100%;
+                        margin-bottom: 30px;
+                        & .table-header {
+                            height: auto;
+                            & .table-subTitle {
+                                display: none;
+                            }
+                            & .table-subTitle-mobile {
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: center;
+                                color: black;
+                                font-weight: 600;
+                                font-size: 0.75rem;
+                                margin-top: 1rem;
+
+                                & span {
+                                    margin: 0 0 0 0.5rem;
+                                    color: #b4a9a9;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+
+                        & .table-line {
+                            flex-direction: row;
+                            & .table-desc-mobile {
+                                display: inline;
+                                margin-left: 1rem;
+                            }
+
+                            & .table-cell {
+                                color: $secondColor;
+                            }
+                        }
+                    }
+                }
+                & .price-footer {
+                    & .price-button {
+                        width: 100%;
+                    }
+                }
             }
         }
     }

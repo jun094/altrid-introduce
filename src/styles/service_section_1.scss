@@ -28,6 +28,9 @@
                 width: 90%;
             }
         }
+        & .right-and-bottom-mobile {
+            display: none;
+        }
     }
 
     @media all and (max-width: 768px) {
@@ -46,6 +49,10 @@
             }
 
             & .right-and-bottom {
+                display: none;
+            }
+
+            & .right-and-bottom-mobile {
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;

@@ -91,7 +91,8 @@ export default function CustomizedAccordions() {
                     </AccordionSummary>
                     <AccordionDetails>
                         <span>
-                            000버전 구매시,학원 코드가 부여됩니다. 회원가입시 학원코드를 입력하면 한 학원에서 여러 선생님이 이용 가능합니다.
+                            유료 서비스 구매시,학원 코드가 부여됩니다. 회원가입시 학원코드를 입력하면 한 학원에서 여러 선생님이 이용
+                            가능합니다.
                         </span>
                     </AccordionDetails>
                 </Accordion>

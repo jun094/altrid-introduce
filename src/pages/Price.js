@@ -13,6 +13,10 @@ const PriceButton = styled.button`
 
     background-color: ${(props) => (props.click ? '#3b168a' : 'white')};
     color: ${(props) => (props.click ? '#13E2A1' : '#C4C4C4')};
+
+    @media (min-width: 0px) and (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 const BadgeButton = styled.a`
@@ -26,8 +30,19 @@ const MoneyNum = styled.p`
     ${(props) =>
         props.type === 'group' &&
         css`
-            height: 11px;
+            height: 14px;
             border-bottom: 2.5px solid black;
+
+            @media (min-width: 0px) and (max-width: 768px) {
+                margin: 0;
+                height: auto;
+                border-bottom: 0;
+                text-decoration: line-through;
+
+                & + & {
+                    margin-left: 0.25rem;
+                }
+            }
         `}
 `;
 
@@ -106,7 +121,9 @@ function Price() {
 
                 <div className="price-title">
                     <div className="title-left">
-                        <h2>무료버전으로 시작하고, 학원 성장을 경험해보세요.</h2>
+                        <h2>
+                            무료버전으로 시작하고, <span> 학원 성장을 경험해보세요.</span>
+                        </h2>
                         <p>베타 기간 한정, 모든 기능에 대하여 할인된 가격으로 제공해드립니다.</p>
                     </div>
                     <div className="title-right">
@@ -130,11 +147,11 @@ function Price() {
                 </div>
 
                 <div className="price-table">
-                    <div className="col">
+                    <div className="col web">
                         <div className="child table-header"></div>
                         <div className="name table-line">무제한 클래스 생성</div>
                         <div className="name table-line">에디터 통한 무제한 과제 생성</div>
-                        <div className="name table-line">파일 업로드 통한 무제한 과제 생성</div>
+                        <div className="name table-line">파일 업로드 통한 과제 생성</div>
                         <div className="name table-line">과제별 반/학생 리포트</div>
                         <div className="name table-line">AI 취약 영역 분석</div>
                         <div className="name table-line">과제 중 시선흐름 추적</div>
@@ -148,42 +165,57 @@ function Price() {
                                 <h2>{i}</h2>
                                 <div className="table-subTitle">
                                     <div>
-                                        <MoneyNum type={priceState}>{PriceData[i]['price']}</MoneyNum>원<span>(학생당/월)</span>
+                                        <MoneyNum type={priceState}>{PriceData[i]['price']}원</MoneyNum>
                                     </div>
-                                    <div style={{ marginTop: '5px' }}>
+                                    <div>
                                         {priceState === 'group' ? (
-                                            <>
-                                                <MoneyNum>{PriceData[i]['price2']}</MoneyNum>원<span>(학생당/월)</span>
-                                            </>
+                                            <div style={{ marginTop: '12px' }}>
+                                                <MoneyNum>{PriceData[i]['price2']}원</MoneyNum>
+                                            </div>
                                         ) : (
                                             ''
                                         )}
                                     </div>
+
+                                    <span>(학생당/월)</span>
+                                </div>
+                                <div className="table-subTitle-mobile">
+                                    <MoneyNum type={priceState}>{PriceData[i]['price']}원</MoneyNum>
+                                    {priceState === 'group' ? <MoneyNum>{PriceData[i]['price2']}원</MoneyNum> : ''}
+                                    <span>(학생당/월)</span>
                                 </div>
                             </div>
                             <div className="child table-line">
                                 <PriceItems type={PriceData[i]['draft_class']}></PriceItems>
+                                <div className="table-desc-mobile">무제한 클래스 생성</div>
                             </div>
                             <div className="child table-line">
                                 <PriceItems type={PriceData[i]['draft_assignment']}></PriceItems>
+                                <div className="table-desc-mobile">에디터 통한 무제한 과제 생성</div>
                             </div>
                             <div className="child table-line">
                                 <PriceItems type={PriceData[i]['draft_file_assignment']}></PriceItems>
+                                <div className="table-desc-mobile">파일 업로드 통한 과제 생성</div>
                             </div>
                             <div className="child table-line">
                                 <PriceItems type={PriceData[i]['class_report']}></PriceItems>
+                                <div className="table-desc-mobile">과제별 반/학생 리포트</div>
                             </div>
                             <div className="child table-line">
                                 <PriceItems type={PriceData[i]['AI_report']}></PriceItems>
+                                <div className="table-desc-mobile">AI 취약 영역 분석</div>
                             </div>
                             <div className="child table-line">
                                 <PriceItems type={PriceData[i]['eyetrack']}></PriceItems>
+                                <div className="table-desc-mobile">과제 중 시선흐름 추적</div>
                             </div>
                             <div className="child table-line">
                                 <PriceItems type={PriceData[i]['pattern_analysis']}></PriceItems>
+                                <div className="table-desc-mobile">문제 풀이 패턴 분석</div>
                             </div>
                             <div className="child table-line">
                                 <PriceItems type={PriceData[i]['online_video']}></PriceItems>
+                                <div className="table-desc-mobile">온라인 화상 수업</div>
                             </div>
                         </div>
                     ))}

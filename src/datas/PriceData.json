@@ -1,7 +1,7 @@
 {
     "Free":{
-        "price": "00,000",
-        "price2": "99,999",
+        "price": "0",
+        "price2": "0",
         "draft_class":1,
         "draft_assignment":1,
         "draft_file_assignment": 0,

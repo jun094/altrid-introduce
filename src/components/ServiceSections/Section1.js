@@ -16,12 +16,12 @@ function Section1({ history }) {
         <>
             <div className="left-and-top">
                 <div className="contents">
-                    <Fade bottom distance={'3rem'} delay={333} duration={666}>
+                    <Fade right distance={'3rem'} delay={333} duration={666}>
                         <h1>
                             혁신적인 기술을 접목한 <br /> 맞춤형 학습 솔루션
                         </h1>
                     </Fade>
-                    <Fade bottom distance={'3rem'} delay={666} duration={666}>
+                    <Fade right distance={'3rem'} delay={333} duration={666}>
                         <h4>
                             알트리드만의 기술로 스마트하게 과제를 생성하고
                             <br />
@@ -29,7 +29,7 @@ function Section1({ history }) {
                         </h4>
                     </Fade>
 
-                    <Fade delay={1330} duration={1000}>
+                    <Fade bottom delay={666} duration={1000}>
                         <div>
                             <button
                                 type="button"
@@ -44,8 +44,14 @@ function Section1({ history }) {
                     </Fade>
                 </div>
             </div>
+
             <div className="right-and-bottom">
-                <Fade right distance={'4rem'} duration={666}>
+                <Fade left distance={'4rem'} delay={333} duration={666}>
+                    <img src={Service1_0} alt="service in devices..." />
+                </Fade>
+            </div>
+            <div className="right-and-bottom-mobile">
+                <Fade bottom distance={'4rem'} delay={999} duration={666}>
                     <img src={Service1_0} alt="service in devices..." />
                 </Fade>
             </div>
