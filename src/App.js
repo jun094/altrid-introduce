@@ -10,6 +10,9 @@ import ScrollTop from './components/ScrollTop';
 import { Element } from 'react-scroll';
 import './styles/common.scss';
 import CustomerServices from './pages/CustomerServices';
+import channelIOAccessKey from './components/ChannelIO/accessKeys';
+import ChannelService from './components/ChannelIO/ChannelService';
+import generateHash from './components/ChannelIO/generateHash';
 
 if (!localStorage.getItem('lang')) {
     localStorage.setItem('lang', 'ko');
@@ -25,9 +28,21 @@ function App() {
     //     window.analytics.logEvent('접속 종료함');
     // };
 
-    // useEffect(() => {
-    //     window.addEventListener('unload', onUnload);
-    // }, []);
+    useEffect(() => {
+        // window.addEventListener('unload', onUnload);
+        if (channelIOAccessKey.pluginKey) {
+            ChannelService.shutdown();
+            ChannelService.boot({
+                pluginKey: channelIOAccessKey.pluginKey, //please fill with your plugin key
+                profile: {
+                    name: null,
+                    email: null,
+                    mobileNumber: null,
+                    referrer: window.location.href,
+                },
+            });
+        }
+    }, []);
 
     return (
         <>

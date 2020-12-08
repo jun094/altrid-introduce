@@ -4,6 +4,7 @@ import SectionFrame from '../components/SectionFrame';
 import '../styles/price_page.scss';
 import styled, { css } from 'styled-components';
 import PriceData from '../datas/PriceData.json';
+import ChannelService from '../components/ChannelIO/ChannelService';
 
 const PriceButton = styled.button`
     padding: 0.7rem 2rem;
@@ -225,7 +226,8 @@ function Price() {
                     <button
                         className="price-button"
                         onClick={() => {
-                            alert('준비 중입니다!!\n문의는 jun094@optmier.com으로 해주세요.');
+                            // alert('준비 중입니다!!\n문의는 jun094@optmier.com으로 해주세요.');
+                            ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다!');
                         }}
                     >
                         도입 문의하기
