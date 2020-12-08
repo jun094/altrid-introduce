@@ -53,7 +53,7 @@ function Section6() {
                     <Fade duration={666} delay={500} fraction={0.8}>
                         <SolutionCard
                             icon={ImgSolu3}
-                            title="실시간 교육이 가능한 1대1 화상교육"
+                            title="실시간 집중도 확인이 가능한 맞춤형 화상교육"
                             text="시선흐름 패턴과 영어 학습에 관련해서 실시간 피드백이 가능합니다."
                         />
                     </Fade>
