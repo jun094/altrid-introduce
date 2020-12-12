@@ -112,7 +112,7 @@ function Section2() {
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
                     <h4>
-                        <span>실시간 화상 교육</span>을 통한 시선 흐름 및 문제풀이에 대한 교육 진행
+                        학습 리포트를 참고하여 <span>언제, 어디서나 </span>가능한 실시간 화상 수업
                     </h4>
                 </div>
             </Fade>
@@ -121,7 +121,19 @@ function Section2() {
                     <div className="head-symbol">
                         <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                     </div>
-                    <h4>실시간 피드백이 가능한 1대1 맞춤형 교육 진행</h4>
+                    <h4>
+                        수업 목적에 특화된 화상 수업기능 활용으로 <span>실시간 피드백</span>이 가능한 효율적 수업진행
+                    </h4>
+                </div>
+            </Fade>
+            <Fade delay={400} duration={666}>
+                <div className="descriptor">
+                    <div className="head-symbol">
+                        <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                    </div>
+                    <h4>
+                        AI시선 추적 기술 활용, 화상 수업 중 <span>실시간 집중도</span>확인을 통해 개인화 수업 가능.
+                    </h4>
                 </div>
             </Fade>
         </>,
@@ -204,14 +216,24 @@ function Section2() {
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
                 <h4>
-                    <span>실시간 화상 교육</span>을 통한 시선 흐름 및 문제풀이에 대한 교육 진행
+                    학습 리포트를 참고하여 <span>언제, 어디서나</span> 가능한 실시간 화상 수업
                 </h4>
             </div>
             <div className="descriptor">
                 <div className="head-symbol">
                     <img src={ImgDescriptorSymbor} alt="symbol..."></img>
                 </div>
-                <h4>실시간 피드백이 가능한 1대1 맞춤형 교육 진행</h4>
+                <h4>
+                    수업 목적에 특화된 화상 수업기능 활용으로 <span>실시간 피드백</span>이 가능한 효율적 수업진행
+                </h4>
+            </div>
+            <div className="descriptor">
+                <div className="head-symbol">
+                    <img src={ImgDescriptorSymbor} alt="symbol..."></img>
+                </div>
+                <h4>
+                    AI시선 추적 기술 활용, 화상 수업 중 실시간 집중도 확인을 통해 <span>개인화 수업</span> 가능
+                </h4>
             </div>
         </>,
         <></>,
@@ -242,7 +264,7 @@ function Section2() {
             id: 3,
             ref: itemsRef[3],
             active: false,
-            text: '온라인 화상 교육',
+            text: '온라인 화상 수업',
             itemImg: ImgItem4,
         },
     ]);
