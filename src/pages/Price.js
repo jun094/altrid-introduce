@@ -86,7 +86,7 @@ function Price() {
     return (
         <>
             <Helmet>
-                <title>알트리드, 불필요한 시간과 비용을 없애자! | Eduity for infinite pioneer</title>
+                <title>Altrid, 가격정책 | 당신만의 학습 관리 시스템</title>
             </Helmet>
             <SectionFrame id="price_section_1">
                 <BadgeButton

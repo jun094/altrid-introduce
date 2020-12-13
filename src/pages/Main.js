@@ -18,7 +18,7 @@ function Main() {
     return (
         <>
             <Helmet>
-                <title>알트리드, 불필요한 시간과 비용을 없애자! | Eduity for infinite pioneer</title>
+                <title>Altrid, 당신만의 학습 관리 시스템 | 모든 것을 관찰하고 기록합니다.</title>
             </Helmet>
             <SectionFrame id="main_section_1">
                 <Section1 />

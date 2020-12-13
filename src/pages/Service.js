@@ -15,7 +15,7 @@ function Service() {
     return (
         <>
             <Helmet>
-                <title>알트리드, 불필요한 시간과 비용을 없애자! | Eduity for infinite pioneer</title>
+                <title>Altrid, 이용 방법 | 당신만의 학습 관리 시스템</title>
             </Helmet>
             <SectionFrame id="service_section_1">
                 <Section1 />
