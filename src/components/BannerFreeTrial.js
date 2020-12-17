@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/banner_free_trial.scss';
 import { withRouter } from 'react-router-dom';
+import ChannelService from './ChannelIO/ChannelService';
 
 function BannerFreeTrial({ history }) {
     return (
@@ -14,7 +15,8 @@ function BannerFreeTrial({ history }) {
                     type="button"
                     className="normal in-section no-op"
                     onClick={() => {
-                        history.push('/pricing');
+                        // history.push('/pricing');
+                        ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
                     }}
                 >
                     무료체험하기

@@ -3,6 +3,7 @@ import '../../styles/service_section_1.scss';
 import { Fade } from 'react-reveal';
 import { withRouter } from 'react-router-dom';
 import Service1_0 from '../../images/service_sections/service_1-0.png';
+import ChannelService from '../ChannelIO/ChannelService';
 
 /**
  * h1: 36px / 44px
@@ -35,7 +36,8 @@ function Section1({ history }) {
                                 type="button"
                                 className="normal in-section no-op"
                                 onClick={() => {
-                                    history.push('/pricing');
+                                    // history.push('/pricing');
+                                    ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
                                 }}
                             >
                                 무료체험하기

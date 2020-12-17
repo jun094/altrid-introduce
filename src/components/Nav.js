@@ -8,6 +8,7 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 import { Link as AnimScrollTo } from 'react-scroll';
 import Hambuger from './Hambuger';
 import { strings } from '../datas/strings';
+import ChannelService from './ChannelIO/ChannelService';
 
 const { nav_menus } = strings;
 
@@ -132,7 +133,8 @@ function Nav({ optStatic, history }) {
                             type="button"
                             className="normal login"
                             onClick={() => {
-                                history.push('/pricing');
+                                // history.push('/pricing');
+                                ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
                             }}
                         >
                             무료체험하기

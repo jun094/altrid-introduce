@@ -8,6 +8,7 @@ import { MdMenu } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { strings } from '../datas/strings';
+import ChannelService from './ChannelIO/ChannelService';
 
 const { nav_menus } = strings;
 
@@ -82,17 +83,22 @@ function Hambuger() {
                         </ListItem>
                     </NavMenuItem> */}
                     <NavMenuItem linkTo="/service">
-                        <ListItem button>
-                            <span className="list-text">{'커리큘럼'}</span>
+                        <ListItem button on>
+                            <span className="list-text">{'이용방법'}</span>
                         </ListItem>
                     </NavMenuItem>
-                    <NavMenuItem linkTo="/customer-service/faq">
+                    {/* <NavMenuItem linkTo="/customer-service/faq">
                         <ListItem button>
                             <span className="list-text">{'고객센터'}</span>
                         </ListItem>
-                    </NavMenuItem>
-                    <NavMenuItem linkTo="/pricing">
-                        <ListItem button>
+                    </NavMenuItem> */}
+                    <NavMenuItem>
+                        <ListItem
+                            button
+                            onClick={() => {
+                                ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
+                            }}
+                        >
                             <span className="list-text">{'무료체험 신청'}</span>
                         </ListItem>
                     </NavMenuItem>
