@@ -31,6 +31,14 @@
                     z-index: 1;
                     transition: all 0.333s cubic-bezier(0.65, 0.05, 0.36, 1);
 
+                    & .prepare {
+                        background-color: #cecdcdad;
+                        padding: 0rem 0.5rem;
+                        border-radius: 12px;
+                        color: #ffffff;
+                        font-size: 0.65rem;
+                        margin-left: 0.5rem;
+                    }
                     &.active {
                         color: #3b168a;
                     }
@@ -38,6 +46,8 @@
                     & h4 {
                         margin: 0;
                         pointer-events: none;
+                        display: flex;
+                        align-items: center;
 
                         &.mobile {
                             display: none;
@@ -146,8 +156,17 @@
                 & .mobile-item-title {
                     color: #ffffff;
                     display: flex;
+                    align-items: center;
                     font-weight: 600;
                     justify-content: center;
+                    & .prepare {
+                        background-color: #cecdcdad;
+                        padding: 0 0.7rem;
+                        border-radius: 12px;
+                        color: #ffffff;
+                        font-size: 0.5rem;
+                        margin-left: 0.9rem;
+                    }
                 }
             }
             & .subs-root {

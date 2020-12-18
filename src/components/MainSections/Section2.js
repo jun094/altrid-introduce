@@ -349,12 +349,25 @@ function Section2() {
                                 ref={d.ref}
                                 onClick={handleOnItemClick}
                             >
-                                <h4>{d.text}</h4>
+                                {i <= 2 ? (
+                                    <h4>{d.text}</h4>
+                                ) : (
+                                    <h4>
+                                        {d.text} <span className="prepare">준비중</span>
+                                    </h4>
+                                )}
                                 <h4 className="mobile">{`0${d.id + 1}`}</h4>
                             </div>
                         ))}
                     </div>
-                    <h3 className="mobile-item-title">{items[activeItemNum].text}</h3>
+                    {activeItemNum <= 2 ? (
+                        <h3 className="mobile-item-title">{items[activeItemNum].text}</h3>
+                    ) : (
+                        <h3 className="mobile-item-title">
+                            {items[activeItemNum].text}
+                            <span className="prepare">준비중</span>
+                        </h3>
+                    )}
                 </div>
             </Fade>
             <div className="subs-root">
