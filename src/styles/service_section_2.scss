@@ -14,9 +14,68 @@
             padding-bottom: 100px;
 
             & .container {
+                position: relative;
                 width: 47%;
                 & img {
                     width: 100%;
+
+                    &.icon {
+                        position: absolute;
+                        width: 16%;
+
+                        &.i0 {
+                            right: -7.666%;
+                            bottom: -8%;
+                        }
+                        &.i1 {
+                            right: -9%;
+                            top: 13%;
+                        }
+                        &.i2 {
+                            right: -9%;
+                            top: 16%;
+                        }
+                        &.i3 {
+                            right: -6%;
+                            bottom: -7%;
+                        }
+                    }
+                }
+
+                & .service-video {
+                    position: absolute;
+
+                    &.v0 {
+                        left: 7.44%;
+                        top: 14.2%;
+                        width: calc(100% - 7.7%);
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px;
+                    }
+
+                    &.v1 {
+                        left: 16%;
+                        top: 8.2%;
+                        width: calc(100% - 16.2%);
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px;
+                    }
+
+                    &.v2 {
+                        left: 7.44%;
+                        top: 7.5%;
+                        width: calc(100% - 7.7%);
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px;
+                    }
+
+                    &.v3 {
+                        left: 13.111%;
+                        top: 14%;
+                        width: calc(100% - 13.4%);
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px;
+                    }
                 }
                 & .step-list {
                     display: flex;
@@ -46,12 +105,73 @@
                 padding-bottom: 50px;
 
                 & .m_container {
+                    position: relative;
                     width: 100%;
 
                     & img {
                         width: 95%;
                         height: 95%;
+
+                        &.icon {
+                            position: absolute;
+                            width: 16%;
+                            height: initial;
+
+                            &.i0 {
+                                right: -4%;
+                                bottom: -8%;
+                            }
+                            &.i1 {
+                                right: -5.5%;
+                                top: 31%;
+                            }
+                            &.i2 {
+                                right: -5.5%;
+                                top: 33%;
+                            }
+                            &.i3 {
+                                right: -3.7%;
+                                bottom: -7%;
+                            }
+                        }
                     }
+
+                    & .service-video {
+                        position: absolute;
+
+                        &.v0 {
+                            left: 9.44%;
+                            top: 31.1%;
+                            width: calc(100% - 12.2%);
+                            border-bottom-left-radius: 7px;
+                            border-bottom-right-radius: 7px;
+                        }
+
+                        &.v1 {
+                            left: 17.7%;
+                            top: 29.2%;
+                            width: calc(100% - 20.5%);
+                            border-bottom-left-radius: 7px;
+                            border-bottom-right-radius: 7px;
+                        }
+
+                        &.v2 {
+                            left: 9.6%;
+                            top: 26.1%;
+                            width: calc(100% - 12.5%);
+                            border-bottom-left-radius: 7px;
+                            border-bottom-right-radius: 7px;
+                        }
+
+                        &.v3 {
+                            left: 15.1%;
+                            top: 32.1%;
+                            width: calc(100% - 17.8%);
+                            border-bottom-left-radius: 7px;
+                            border-bottom-right-radius: 7px;
+                        }
+                    }
+
                     & .step-list {
                         display: flex;
                         align-items: center;
