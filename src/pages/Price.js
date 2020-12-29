@@ -227,7 +227,8 @@ function Price() {
                         className="price-button"
                         onClick={() => {
                             // alert('준비 중입니다!!\n문의는 jun094@optmier.com으로 해주세요.');
-                            ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
+                            // ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
+                            ChannelService.showMessenger();
                         }}
                     >
                         도입 문의하기

@@ -134,7 +134,8 @@ function Nav({ optStatic, history }) {
                             className="normal login"
                             onClick={() => {
                                 // history.push('/pricing');
-                                ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
+                                // ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
+                                ChannelService.showMessenger();
                             }}
                         >
                             무료체험하기

@@ -96,7 +96,8 @@ function Hambuger() {
                         <ListItem
                             button
                             onClick={() => {
-                                ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
+                                // ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
+                                ChannelService.showMessenger();
                             }}
                         >
                             <span className="list-text">{'무료체험 신청'}</span>
