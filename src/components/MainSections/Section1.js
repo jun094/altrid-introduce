@@ -18,7 +18,7 @@ function Section1({ history }) {
                 <div className="contents">
                     <Fade bottom distance={'3rem'} delay={333} duration={666}>
                         <h1>
-                            학습에 불필요한 <br /> 시간과 비용을 없앱니다.
+                            알트리드, 학습에 불필요한 <br /> 시간과 비용을 없앱니다.
                         </h1>
                     </Fade>
                     <Fade bottom distance={'3rem'} delay={666} duration={666}>
