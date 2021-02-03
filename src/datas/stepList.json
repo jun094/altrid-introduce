@@ -5,6 +5,7 @@
         "subText1": "학생이 학원코드 입력시, 자동으로 수강생 선택 가능",
         "subText2": "한번에 여러 클래스 관리 가능",
         "src": "/service_sections/service_2-0.png",
+        "src_mobile": "/service_sections/service_2-0_mobile.png",
         "video": "/service_sections/service_video-0.mp4",
         "icon": "/service_sections/service_2-0_icon.png"
     },
@@ -14,6 +15,7 @@
         "subText1": "알트리드 자체 에디터를 통한 과제 직접 생성",
         "subText2": "기존의 제작한 hwp, pdf 등의 파일을 업로하여 과제 생성",
         "src": "/service_sections/service_2-1.png",
+        "src_mobile": "/service_sections/service_2-1_mobile.png",
         "video": "/service_sections/service_video-1.mp4",
         "icon": "/service_sections/service_2-1_icon.png"
     },
@@ -23,6 +25,7 @@
         "subText1": "우리 반의 현재 과제 진행률 및 점수 비교 가능",
         "subText2": "학생별 카드 view가 생성되어 한 번에 확인 가능",
         "src": "/service_sections/service_2-2.png",
+        "src_mobile": "/service_sections/service_2-2_mobile.png",
         "video": "/service_sections/service_video-2.mp4",
         "icon": "/service_sections/service_2-2_icon.png"
     },
@@ -32,6 +35,7 @@
         "subText1": "학생별 TOP3 취약 영역 선정",
         "subText2": "학생별 시선흐름 추적 영상 및 패턴 데이터 제공",
         "src": "/service_sections/service_2-3.png",
+        "src_mobile": "/service_sections/service_2-3_mobile.png",
         "video": "/service_sections/service_video-3.mp4",
         "icon": "/service_sections/service_2-3_icon.png"
     }

@@ -46,11 +46,7 @@ function Section2() {
                                 <div className="m_container">
                                     <StepText tag={tag} title={stepList[tag]['title']} mobile={true} />
                                     <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
-                                        <img src={stepList[tag]['src']} alt="예시화면" />
-                                        <video class={`service-video v${idx}`} loop muted autoPlay>
-                                            <source src={stepList[tag]['video']} type="video/mp4" />
-                                        </video>
-                                        <img class={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />
+                                        <img src={stepList[tag]['src_mobile']} alt="예시화면" />
                                     </div>
                                 </div>
                             </Fade>
@@ -95,11 +91,7 @@ function Section2() {
                                 <div className="m_container">
                                     <StepText tag={tag} title={stepList[tag]['title']} mobile={true} />
                                     <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
-                                        <img src={stepList[tag]['src']} alt="예시화면" />
-                                        <video class={`service-video v${idx}`} loop muted autoPlay>
-                                            <source src={stepList[tag]['video']} type="video/mp4" />
-                                        </video>
-                                        <img class={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />
+                                        <img src={stepList[tag]['src_mobile']} alt="예시화면" />
                                     </div>
                                 </div>
                             </Fade>

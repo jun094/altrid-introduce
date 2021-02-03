@@ -38,9 +38,9 @@ function Main() {
             <SectionFrame id="main_section_6">
                 <Section6 />
             </SectionFrame>
-            <SectionFrame id="main_section_banner_matrios">
+            {/* <SectionFrame id="main_section_banner_matrios">
                 <BannerMatrios />
-            </SectionFrame>
+            </SectionFrame> */}
             <SectionFrame id="main_section_banner_free_trial">
                 <BannerFreeTrial />
             </SectionFrame>

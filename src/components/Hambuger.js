@@ -62,29 +62,14 @@ function Hambuger() {
                 </List>
                 <div className="divider"></div> */}
                 <List>
-                    {/* <NavMenuItem linkTo="/about">
-                        <ListItem button>
-                            <span className="list-text">{nav_menus.about[window.lang]}</span>
-                        </ListItem>
-                    </NavMenuItem>
-                    <NavMenuItem linkTo="/tech">
-                        <ListItem button>
-                            <span className="list-text">{nav_menus.tech[window.lang]}</span>
-                        </ListItem>
-                    </NavMenuItem>
-                    <NavMenuItem linkTo="/product">
-                        <ListItem button>
-                            <span className="list-text">{nav_menus.product[window.lang]}</span>
-                        </ListItem>
-                    </NavMenuItem>
-                    <NavMenuItem linkTo="/price">
-                        <ListItem button>
-                            <span className="list-text">{nav_menus.book_online[window.lang]}</span>
-                        </ListItem>
-                    </NavMenuItem> */}
                     <NavMenuItem linkTo="/service">
                         <ListItem button on>
                             <span className="list-text">{'이용방법'}</span>
+                        </ListItem>
+                    </NavMenuItem>
+                    <NavMenuItem linkTo="/service">
+                        <ListItem button on>
+                            <span className="list-text">{'가격정책'}</span>
                         </ListItem>
                     </NavMenuItem>
                     {/* <NavMenuItem linkTo="/customer-service/faq">
