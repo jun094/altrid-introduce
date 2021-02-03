@@ -34,10 +34,10 @@ function Section2() {
                             <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
                                 <div className="container">
                                     <img src={stepList[tag]['src']} alt="예시화면" />
-                                    <video class={`service-video v${idx}`} loop muted autoPlay playsinline>
+                                    <video className={`service-video v${idx}`} loop muted autoPlay playsInline>
                                         <source src={stepList[tag]['video']} type="video/mp4" />
                                     </video>
-                                    <img class={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />
+                                    <img className={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />
                                 </div>
                             </Fade>
                         </div>
@@ -47,10 +47,10 @@ function Section2() {
                                     <StepText tag={tag} title={stepList[tag]['title']} mobile={true} />
                                     <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                                         <img src={stepList[tag]['src']} alt="예시화면" />
-                                        <video class={`service-video v${idx}`} loop muted autoPlay playsinline>
+                                        <video className={`service-video v${idx}`} loop muted autoPlay playsInline>
                                             <source src={stepList[tag]['video']} type="video/mp4" />
                                         </video>
-                                        <img class={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />{' '}
+                                        <img className={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />{' '}
                                     </div>
                                 </div>
                             </Fade>
@@ -72,10 +72,10 @@ function Section2() {
                             <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
                                 <div className="container">
                                     <img src={stepList[tag]['src']} alt="예시화면" />
-                                    <video class={`service-video v${idx}`} loop muted autoPlay playsinline>
+                                    <video className={`service-video v${idx}`} loop muted autoPlay playsInline>
                                         <source src={stepList[tag]['video']} type="video/mp4" />
                                     </video>
-                                    <img class={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />
+                                    <img className={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />
                                 </div>
                             </Fade>
                             <Fade bottom distance={'3rem'} delay={0} duration={666} fraction={0.9}>
@@ -96,10 +96,10 @@ function Section2() {
                                     <StepText tag={tag} title={stepList[tag]['title']} mobile={true} />
                                     <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                                         <img src={stepList[tag]['src']} alt="예시화면" />
-                                        <video class={`service-video v${idx}`} loop muted autoPlay playsinline>
+                                        <video className={`service-video v${idx}`} loop muted autoPlay playsInline>
                                             <source src={stepList[tag]['video']} type="video/mp4" />
                                         </video>
-                                        <img class={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />
+                                        <img className={`icon i${idx}`} src={stepList[tag]['icon']} alt="" />
                                     </div>
                                 </div>
                             </Fade>

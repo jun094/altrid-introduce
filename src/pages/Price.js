@@ -91,7 +91,7 @@ function Price() {
             <SectionFrame id="price_section_1">
                 <BadgeButton
                     type={priceState}
-                    href="https://www.notion.so/optmier/71ef2aa559d84fb7a62ed8d9c79c6ec6"
+                    href="https://www.notion.so/1b2bb0974ccb4148bc78e945a7c51413"
                     target="_blank"
                     alt="badge"
                     className="price-badge"
