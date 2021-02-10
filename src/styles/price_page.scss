@@ -38,6 +38,12 @@ $secondColor: #3b168a;
                 font-weight: 500;
             }
         }
+
+        @media (min-width: 0px) and (max-width: 768px) {
+            & .header-text {
+                font-size: 1.6rem;
+            }
+        }
     }
 }
 #price_section_1 {

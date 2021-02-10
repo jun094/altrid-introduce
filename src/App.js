@@ -13,6 +13,7 @@ import CustomerServices from './pages/CustomerServices';
 import channelIOAccessKey from './components/ChannelIO/accessKeys';
 import ChannelService from './components/ChannelIO/ChannelService';
 import generateHash from './components/ChannelIO/generateHash';
+import PriceDetails from './components/Price/PriceDetails';
 
 if (!localStorage.getItem('lang')) {
     localStorage.setItem('lang', 'ko');
@@ -54,6 +55,7 @@ function App() {
                         <Route path="/" component={Main} exact />
                         <Route path="/service" component={Service} exact />
                         <Route path="/pricing" component={Price} exact />
+                        <Route path="/pricing/details" component={PriceDetails} exact />
                         <Route path="/customer-service" component={CustomerServices} />
                         <Route>
                             <Error />
