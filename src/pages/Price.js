@@ -51,7 +51,6 @@ const BadgeButton = styled.a`
 
     @media (min-width: 0px) and (max-width: 768px) {
         & {
-            max-width: 550px;
             width: 100%;
             box-sizing: border-box;
             & .badge-left {
