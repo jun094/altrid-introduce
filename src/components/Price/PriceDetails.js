@@ -6,8 +6,8 @@ import PriceData from '../../datas/PriceData.json';
 import MenuData from '../../datas/MenuData.json';
 import { withRouter } from 'react-router-dom';
 
-function PriceDetails({ match }) {
-    console.log(match);
+function PriceDetails({ match, history }) {
+    console.log(history);
     const [priceState, setPriceState] = useState('personal');
 
     const handleChange = (event) => {

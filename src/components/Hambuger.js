@@ -33,8 +33,6 @@ function Hambuger() {
     const [state, setState] = useState(false);
 
     const toggleDrawer = (open) => (event) => {
-        console.log(open, typeof open);
-
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
         }
