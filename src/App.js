@@ -6,6 +6,7 @@ import Error from './pages/Error';
 import Service from './pages/Service';
 import { Switch, Route } from 'react-router-dom';
 import Price from './pages/Price';
+import Payment from './pages/Payment';
 import ScrollTop from './components/ScrollTop';
 import { Element } from 'react-scroll';
 import './styles/common.scss';
@@ -56,6 +57,7 @@ function App() {
                         <Route path="/service" component={Service} exact />
                         <Route path="/pricing" component={Price} exact />
                         <Route path="/pricing/details" component={PriceDetails} exact />
+                        <Route path="/payment" component={Payment} exact />
                         <Route path="/customer-service" component={CustomerServices} />
                         <Route>
                             <Error />

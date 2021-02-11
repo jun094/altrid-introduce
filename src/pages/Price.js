@@ -7,7 +7,7 @@ import PriceData from '../datas/PriceData.json';
 import MenuData from '../datas/MenuData.json';
 import ChannelService from '../components/ChannelIO/ChannelService';
 import Radio from '@material-ui/core/Radio';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 const BadgeButton = styled.a`
     background-color: ${(props) => (props.type === 'group' ? '#3b168a' : 'white')};
@@ -66,11 +66,15 @@ const BadgeButton = styled.a`
     }
 `;
 
-function Price() {
+function Price({ history }) {
     const [priceState, setPriceState] = useState('personal');
 
     const handleChange = (event) => {
         setPriceState(event.target.value);
+    };
+
+    const goToPayments = () => {
+        history.push('/payment');
     };
 
     return (
@@ -89,7 +93,7 @@ function Price() {
                     할인된 가격으로 제공해드립니다.
                 </div>
                 <div className="header-btn">
-                    <button>무료 체험하기</button>
+                    <button onClick={goToPayments}>무료 체험하기</button>
                 </div>
             </SectionFrame>
             <SectionFrame id="price_section_1">
@@ -178,7 +182,14 @@ function Price() {
                                     {i}
                                 </div>
 
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg
+                                    onClick={goToPayments}
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
                                     <path
                                         d="M8.59009 16.59L13.1701 12L8.59009 7.41L10.0001 6L16.0001 12L10.0001 18L8.59009 16.59Z"
                                         fill="#707070"
@@ -285,4 +296,4 @@ function Price() {
     );
 }
 
-export default Price;
+export default withRouter(Price);
