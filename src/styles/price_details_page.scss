@@ -4,6 +4,7 @@ $thirddColor: #3b168a;
 
 .price-detail-root {
     background-color: #f7f9fc;
+    position: relative;
 
     #color-Free {
         color: $fistColor;
@@ -32,6 +33,11 @@ $thirddColor: #3b168a;
         height: 80px;
         border-top: 1px solid #17171717;
         box-shadow: 0 0.2rem 0.25rem #0000001f;
+        z-index: 1001;
+        position: fixed;
+        top: 80px;
+        width: 100%;
+        box-sizing: border-box;
 
         & .nav-left {
             font-size: 1.65rem;
@@ -53,7 +59,7 @@ $thirddColor: #3b168a;
         }
     }
     & .price-wrapper {
-        padding: 50px 32px;
+        padding: 120px 32px 80px 32px;
 
         & .price-header {
             display: flex;
