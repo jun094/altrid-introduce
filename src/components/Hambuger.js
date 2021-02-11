@@ -30,45 +30,33 @@ const NavMenuItem = React.memo(function NavMenuItem({ linkTo, children }) {
 
 function Hambuger() {
     const classes = useStyles();
-    const [state, setState] = useState({
-        right: false,
-    });
-    const toggleDrawer = (side, open) => (event) => {
+    const [state, setState] = useState(false);
+
+    const toggleDrawer = (open) => (event) => {
+        console.log(open, typeof open);
+
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
         }
 
-        setState({ ...state, [side]: open });
+        setState(open);
     };
-    const sideList = (side) => (
+    const sideList = () => (
         <div
             className={classNames(classes.list, window.lang)}
             role="presentation"
-            onClick={toggleDrawer(side, false)}
-            onKeyDown={toggleDrawer(side, false)}
+            onClick={toggleDrawer(false)}
+            onKeyDown={toggleDrawer(false)}
         >
             <div className="hambuger-list">
-                {/* <List>
-                    <ListItem>
-                        <div className="list-header">
-                            Login is <br></br>required :(
-                        </div>
-                    </ListItem>
-                    <ListItem>
-                        <NavMenuItem linkTo="/login">
-                            <span className="list-login">Login</span>
-                        </NavMenuItem>
-                    </ListItem>
-                </List>
-                <div className="divider"></div> */}
                 <List>
                     <NavMenuItem linkTo="/service">
-                        <ListItem button on>
+                        <ListItem button>
                             <span className="list-text">{'이용방법'}</span>
                         </ListItem>
                     </NavMenuItem>
                     <NavMenuItem linkTo="/pricing">
-                        <ListItem button on>
+                        <ListItem button>
                             <span className="list-text">{'가격정책'}</span>
                         </ListItem>
                     </NavMenuItem>
@@ -77,17 +65,16 @@ function Hambuger() {
                             <span className="list-text">{'고객센터'}</span>
                         </ListItem>
                     </NavMenuItem> */}
-                    <NavMenuItem>
-                        <ListItem
-                            button
-                            onClick={() => {
-                                // ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
-                                ChannelService.showMessenger();
-                            }}
-                        >
-                            <span className="list-text">{'무료체험 신청'}</span>
-                        </ListItem>
-                    </NavMenuItem>
+
+                    <ListItem
+                        button
+                        onClick={() => {
+                            // ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
+                            ChannelService.showMessenger();
+                        }}
+                    >
+                        <span className="list-text">{'무료체험 신청'}</span>
+                    </ListItem>
                 </List>
             </div>
         </div>
@@ -95,11 +82,10 @@ function Hambuger() {
 
     return (
         <>
-            <MdMenu size={30} onClick={toggleDrawer('right', true)}></MdMenu>
-
-            <Drawer anchor="right" open={state.right} onClose={toggleDrawer('right', false)}>
+            <Drawer anchor="right" open={state} onClose={toggleDrawer(false)}>
                 {sideList('right')}
             </Drawer>
+            <MdMenu size={30} onClick={toggleDrawer(true)}></MdMenu>
         </>
     );
 }

@@ -7,6 +7,7 @@ import PriceData from '../datas/PriceData.json';
 import MenuData from '../datas/MenuData.json';
 import ChannelService from '../components/ChannelIO/ChannelService';
 import Radio from '@material-ui/core/Radio';
+import { Link } from 'react-router-dom';
 
 const BadgeButton = styled.a`
     background-color: ${(props) => (props.type === 'group' ? '#3b168a' : 'white')};
@@ -170,18 +171,30 @@ function Price() {
                             이용 문의하기
                         </button>
                     </div>
-                    {Object.keys(MenuData).map((i) => (
-                        <div className="col-box">
+                    {Object.keys(MenuData).map((i, idx) => (
+                        <div key={idx} className="col-box">
                             <div className="menu-box-title ">
                                 <div className="header" id={'color-' + i}>
                                     {i}
                                 </div>
+
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M8.59009 16.59L13.1701 12L8.59009 7.41L10.0001 6L16.0001 12L10.0001 18L8.59009 16.59Z"
                                         fill="#707070"
                                     />
                                 </svg>
+                                <Link to={`/pricing/details?plan=${i}`}>
+                                    <div className="mobile-header-more">
+                                        자세히 보기
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.59009 16.59L13.1701 12L8.59009 7.41L10.0001 6L16.0001 12L10.0001 18L8.59009 16.59Z"
+                                                fill="#707070"
+                                            />
+                                        </svg>
+                                    </div>
+                                </Link>
                             </div>
                             <div className="menu-box-price">
                                 <div className="pre-price">
@@ -202,10 +215,10 @@ function Price() {
                     <div className="col-desc">
                         {Object.keys(PriceData['Free']).map((i) =>
                             i[0] === 'h' ? (
-                                <>
+                                <div key={i}>
                                     <div className="row-hr"></div>
                                     <div className="row-left-title">{PriceData['Free'][i]}</div>
-                                </>
+                                </div>
                             ) : (
                                 <div key={i} className="row-left">
                                     {i}
@@ -222,26 +235,26 @@ function Price() {
                                 PriceData[i][j] === '통계/AI 분석' ||
                                 PriceData[i][j] === '화상 강의' ? (
                                     i === 'Free' ? (
-                                        <>
+                                        <div key={idx}>
                                             <div className="row-hr"></div>
                                             <div className="row-title" id="color-Free">
                                                 {i}
                                             </div>
-                                        </>
+                                        </div>
                                     ) : i === 'Standard' ? (
-                                        <>
+                                        <div key={idx}>
                                             <div className="row-hr"></div>
                                             <div className="row-title" id="color-Standard">
                                                 {i}
                                             </div>
-                                        </>
+                                        </div>
                                     ) : (
-                                        <>
+                                        <div key={idx}>
                                             <div className="row-hr"></div>
                                             <div className="row-title" id="color-Premium">
                                                 {i}
                                             </div>
-                                        </>
+                                        </div>
                                     )
                                 ) : (
                                     <div key={idx} className="row">

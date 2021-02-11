@@ -3,8 +3,11 @@ import '../../styles/price_details_page.scss';
 import Radio from '@material-ui/core/Radio';
 import { Helmet } from 'react-helmet';
 import PriceData from '../../datas/PriceData.json';
+import MenuData from '../../datas/MenuData.json';
+import { withRouter } from 'react-router-dom';
 
-function PriceDetails() {
+function PriceDetails({ match }) {
+    console.log(match);
     const [priceState, setPriceState] = useState('personal');
 
     const handleChange = (event) => {
@@ -38,7 +41,8 @@ function PriceDetails() {
                     <div className="price-header">
                         <div className="header-top">
                             <div className="top-left">
-                                99,999<span id="small">원</span>
+                                {MenuData['Standard']['price']}
+                                <span id="small">원</span>
                             </div>
                             <div className="top-right">
                                 <div>
@@ -69,20 +73,42 @@ function PriceDetails() {
                             </div>
                         </div>
                         <div className="header-bottom">
-                            99,999<span id="small">원</span>
+                            {MenuData['Standard']['discount_' + priceState]}
+                            <span id="small">원</span>
                             <span className="price-info" id="small">
                                 (학생당/월)
                             </span>
                         </div>
                     </div>
                     <div className="price-table">
-                        <div className="price-box">
-                            <div className="box-header">asdfasdf</div>
-                            <div className="box-row">
-                                <div className="row-title">asdf</div>
-                                <div className="row-content">a</div>
-                            </div>
-                        </div>
+                        {Object.keys(PriceData['Standard']).map((i, idx) =>
+                            i[0] === 'h' ? (
+                                <div key={idx} className="price-row-header">
+                                    <div className="header-hr"></div>
+                                    <div className="header">{PriceData['Standard'][i]}</div>
+                                </div>
+                            ) : (
+                                <div key={idx} className="price-row">
+                                    <div className="row-title">{i}</div>
+                                    <div className="row-content">
+                                        {PriceData['Standard'][i] === 1 ? (
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.99991 16.1698L4.82991 11.9998L3.40991 13.4098L8.99991 18.9998L20.9999 6.99984L19.5899 5.58984L8.99991 16.1698Z"
+                                                    fill="#3B168A"
+                                                />
+                                            </svg>
+                                        ) : PriceData['Standard'][i] === '-' ? (
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 12.5H5V11H15V12.5Z" fill="#949494" />
+                                            </svg>
+                                        ) : (
+                                            PriceData['Standard'][i]
+                                        )}
+                                    </div>
+                                </div>
+                            ),
+                        )}
                     </div>
                 </div>
             </div>
@@ -90,4 +116,4 @@ function PriceDetails() {
     );
 }
 
-export default PriceDetails;
+export default withRouter(PriceDetails);

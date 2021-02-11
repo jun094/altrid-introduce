@@ -140,6 +140,9 @@ $secondColor: #3b168a;
                         font-size: 1.75rem;
                         font-weight: 600;
                     }
+                    & a {
+                        display: none;
+                    }
                 }
                 & .menu-box-price {
                     display: flex;
@@ -269,6 +272,27 @@ $secondColor: #3b168a;
                     }
                     & .col-box + .col-box {
                         margin: 20px 0 0 0;
+                    }
+                    & .col-box {
+                        & .menu-box-title {
+                            & > svg {
+                                display: none;
+                            }
+
+                            & > a {
+                                display: block;
+                                & .mobile-header-more {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    color: #707070;
+                                    & > svg {
+                                        margin-left: 8px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
