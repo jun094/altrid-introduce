@@ -92,9 +92,9 @@ function Price({ history }) {
                     베타 기간 한정, 모든 기능에 대하여 <br />
                     할인된 가격으로 제공해드립니다.
                 </div>
-                <div className="header-btn">
+                {/* <div className="header-btn">
                     <button onClick={goToPayments}>무료 체험하기</button>
-                </div>
+                </div> */}
             </SectionFrame>
             <SectionFrame id="price_section_1">
                 <div className="price-title">
