@@ -5,10 +5,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import { MdMenu } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 import { strings } from '../datas/strings';
-import ChannelService from './ChannelIO/ChannelService';
+// import ChannelService from './ChannelIO/ChannelService';
 
 const { nav_menus } = strings;
 
@@ -20,10 +20,12 @@ const useStyles = makeStyles({
         width: 'auto',
     },
 });
-const NavMenuItem = React.memo(function NavMenuItem({ linkTo, children }) {
+const NavMenuItem = React.memo(function NavMenuItem({ linkTo, target, children }) {
     return (
         <div className="item">
-            <Link to={linkTo}>{children}</Link>
+            <NavLink to={linkTo} target={target}>
+                {children}
+            </NavLink>
         </div>
     );
 });
@@ -48,11 +50,6 @@ function Hambuger() {
         >
             <div className="hambuger-list">
                 <List>
-                    <NavMenuItem linkTo="/service">
-                        <ListItem button>
-                            <span className="list-text">{'이용방법'}</span>
-                        </ListItem>
-                    </NavMenuItem>
                     <NavMenuItem linkTo="/pricing">
                         <ListItem button>
                             <span className="list-text">{'가격정책'}</span>
@@ -63,16 +60,11 @@ function Hambuger() {
                             <span className="list-text">{'고객센터'}</span>
                         </ListItem>
                     </NavMenuItem> */}
-
-                    <ListItem
-                        button
-                        onClick={() => {
-                            // ChannelService.openChat(undefined, '서비스를 도입하고 싶습니다.');
-                            ChannelService.showMessenger();
-                        }}
-                    >
-                        <span className="list-text">{'무료체험 신청'}</span>
-                    </ListItem>
+                    <NavMenuItem linkTo={{ pathname: 'https://lms.altridedge.com' }} target="_blank">
+                        <ListItem button>
+                            <span className="list-text">{'무료체험하기'}</span>
+                        </ListItem>
+                    </NavMenuItem>
                 </List>
             </div>
         </div>
